@@ -1,0 +1,41 @@
+header
+{
+    height: 150px;
+    border: 1px solid blue;
+    background: rgb(175, 173, 80);
+    display: flex;
+}
+
+#div-a {
+    display: inline-block;
+    height: 150px;
+    border: 1px solid rgba(235, 236, 241, 0.952);
+}
+
+#div-b {
+    display: inline-block;
+    border: 2px solid rgb(0, 255, 221);
+}
+
+#div-c {
+    display: inline-block;
+    border: 2px solid rgb(60, 0, 255);
+}
+
+#div-categories
+{
+    display: inline-block;
+    border: 2px solid rgba(214, 226, 47, 0.616);
+}
+
+svg
+{
+    border: 1px solid lawngreen;
+}
+
+#logo
+{
+    border: 1px solid red;
+    width: 50px;
+    height: 50px;
+}
