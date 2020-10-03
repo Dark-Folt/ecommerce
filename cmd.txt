@@ -1,2 +1,3 @@
 php -S localhost:8000
 git reset --hard c398870aeb1e8167152a34d1b0e98af645c439cc
+sass --watch accueil.scss:accueil.css
