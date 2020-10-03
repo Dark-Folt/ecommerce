@@ -41,6 +41,8 @@ header
             text-align: center;
             border-radius: 8px;
             padding: 6px 0px;
+            text-decoration: none;
+            color: white;
 
             svg
             {
@@ -49,13 +51,12 @@ header
             }
         }
         #connexion_lien{
-            background-color: white;
             margin-right: 5px;
+            background-color: #337ab7;
         }
 
 
         #panier_lien {
-            background-color: rgb(216, 208, 208);
         }
 
         .mySpan {

@@ -8640,17 +8640,16 @@ header #div-c #connexion_lien, header #div-c #panier_lien {
   text-align: center;
   border-radius: 8px;
   padding: 6px 0px;
+  text-decoration: none;
+  color: white;
 }
 header #div-c #connexion_lien svg, header #div-c #panier_lien svg {
   height: 20px;
   width: 20px;
 }
 header #div-c #connexion_lien {
-  background-color: white;
   margin-right: 5px;
-}
-header #div-c #panier_lien {
-  background-color: #d8d0d0;
+  background-color: #337ab7;
 }
 
 /*# sourceMappingURL=accueil.css.map */
