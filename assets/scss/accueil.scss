@@ -67,26 +67,38 @@ header
 
 }
 
+#body_connexion {
+    justify-content: center;
+}
+
 #connexion_form{
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 30%;
+
     #container{
-        border: 1px solid crimson;
         width: 50%;
+        border: 1px solid darkgray;
+        padding: 5px;
+
         .input-container{
-            border: 1px solid rgb(38, 195, 33);
-            background-color: #337ab7;
-            margin: 15px 1em;
+            margin: 15px;
+
             svg{
                 height: 30px;
-                width: 30px;
+                width: 5%;
+            }
+            input{
+                height: 50px;
+                width: 93%;
+                border-radius: 8px;
+                border: 1px solid rgba(128, 131, 107, 0.726);
             }
         }
 
         #bt-container{
             display: flex;
-            color-adjust: 3;
-            background-color: hotpink;
-            button{
-            }
+            justify-content: space-between;
         }
     }
 }

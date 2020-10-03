@@ -8651,23 +8651,36 @@ header #div-c #connexion_lien {
   margin-right: 5px;
   background-color: #337ab7;
 }
+#body_connexion {
+  justify-content: center;
+}
+
+#connexion_form {
+  width: 70%;
+  margin-top: 10px;
+  margin-left: 30%;
+}
 #connexion_form #container {
-  border: 1px solid crimson;
   width: 50%;
+  border: 1px solid darkgray;
+  padding: 5px;
 }
 #connexion_form #container .input-container {
-  border: 1px solid #26c321;
-  background-color: #337ab7;
-  margin: 15px 1em;
+  margin: 15px;
 }
 #connexion_form #container .input-container svg {
   height: 30px;
-  width: 30px;
+  width: 5%;
+}
+#connexion_form #container .input-container input {
+  height: 50px;
+  width: 93%;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 131, 107, 0.726);
 }
 #connexion_form #container #bt-container {
   display: flex;
-  color-adjust: 3;
-  background-color: hotpink;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=accueil.css.map */
