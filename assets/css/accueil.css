@@ -1,29 +1,71 @@
 header
 {
     height: 150px;
+    width: 100%;
     border: 1px solid blue;
+    position: fixed;
+    display: inline-block;
+    margin: auto;
     background: rgb(175, 173, 80);
-    display: flex;
+}
+
+.header_div{
+    position: absolute;
+    display: inline-block;
+    height: 100%;
 }
 
 #div-a {
-    display: inline-block;
-    height: 150px;
+    width: 20%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
     border: 1px solid rgba(235, 236, 241, 0.952);
 }
 
 #div-b {
-    display: inline-block;
     border: 2px solid rgb(0, 255, 221);
+    width: 60%;
+    top: 0px;
+    bottom: 0px;
+    left: 20%;
+}
+
+#searc_input {
+    position: absolute;
 }
 
 #div-c {
-    display: inline-block;
     border: 2px solid rgb(60, 0, 255);
+    width: 20%;
+    right: 0px;
+}
+
+
+#connexion_lien,#panier_lien{
+    border: 1px solid orange;
+    display: inline-block;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    bottom: 0px;
+    padding: 15px;
+    text-align: center;
+    background: fuchsia;
+}
+
+#panier_lien {
+    right: 0px;
 }
 
 #div-categories
 {
+    position: absolute;
+    height: 150px;
+    height: 50px;
+    width: 100px;
+    right: 0px;
+    bottom: 0px;
     display: inline-block;
     border: 2px solid rgba(214, 226, 47, 0.616);
 }
@@ -31,11 +73,17 @@ header
 svg
 {
     border: 1px solid lawngreen;
+    height: 30px;
+    width: 30px;
+}
+
+span {
+    display: block;
 }
 
 #logo
 {
     border: 1px solid red;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
