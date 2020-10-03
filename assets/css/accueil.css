@@ -8651,5 +8651,23 @@ header #div-c #connexion_lien {
   margin-right: 5px;
   background-color: #337ab7;
 }
+#connexion_form #container {
+  border: 1px solid crimson;
+  width: 50%;
+}
+#connexion_form #container .input-container {
+  border: 1px solid #26c321;
+  background-color: #337ab7;
+  margin: 15px 1em;
+}
+#connexion_form #container .input-container svg {
+  height: 30px;
+  width: 30px;
+}
+#connexion_form #container #bt-container {
+  display: flex;
+  color-adjust: 3;
+  background-color: hotpink;
+}
 
 /*# sourceMappingURL=accueil.css.map */

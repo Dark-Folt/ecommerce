@@ -67,4 +67,28 @@ header
 
 }
 
+#connexion_form{
+    #container{
+        border: 1px solid crimson;
+        width: 50%;
+        .input-container{
+            border: 1px solid rgb(38, 195, 33);
+            background-color: #337ab7;
+            margin: 15px 1em;
+            svg{
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        #bt-container{
+            display: flex;
+            color-adjust: 3;
+            background-color: hotpink;
+            button{
+            }
+        }
+    }
+}
+
 
