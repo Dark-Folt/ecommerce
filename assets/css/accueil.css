@@ -8658,7 +8658,7 @@ header #div-c #connexion_lien {
 #connexion_form {
   width: 70%;
   margin-top: 10px;
-  margin-left: 30%;
+  margin-left: 32%;
 }
 #connexion_form #container {
   width: 50%;
@@ -8680,7 +8680,8 @@ header #div-c #connexion_lien {
 }
 #connexion_form #container #bt-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=accueil.css.map */

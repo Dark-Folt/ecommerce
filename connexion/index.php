@@ -37,7 +37,7 @@
                 </div>
                 <div id="bt-container">
                     <button type="button" class="btn btn-success btn-lg">Se connecter</button>
-                    <button type="button" class="btn btn-outline-success btn-lg" id="bt_ccompte">Créer un compte</button>
+                    <button type="button" class="btn btn-outline-success btn-lg" id="bt-ccompte">Créer un compte</button>
                 </div>
             </div>
         </form>

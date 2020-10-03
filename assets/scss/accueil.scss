@@ -74,7 +74,7 @@ header
 #connexion_form{
     width: 70%;
     margin-top: 10px;
-    margin-left: 30%;
+    margin-left: 32%;
 
     #container{
         width: 50%;
@@ -98,7 +98,12 @@ header
 
         #bt-container{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            #bt-ccompte{
+                
+            }
         }
     }
 }
