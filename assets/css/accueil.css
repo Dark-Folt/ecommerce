@@ -8657,26 +8657,29 @@ header #div-c #connexion_lien {
 
 #connexion_form {
   width: 70%;
+  padding: 5px;
   margin-top: 10px;
   margin-left: 32%;
 }
 #connexion_form #container {
   width: 50%;
   border: 1px solid darkgray;
-  padding: 5px;
 }
 #connexion_form #container .input-container {
-  margin: 15px;
+  margin: 10px;
+  position: relative;
 }
 #connexion_form #container .input-container svg {
+  position: absolute;
   height: 30px;
-  width: 5%;
+  width: 30px;
+  top: 10px;
 }
 #connexion_form #container .input-container input {
   height: 50px;
-  width: 93%;
+  width: 90%;
+  padding-left: 35px;
   border-radius: 8px;
-  border: 1px solid rgba(128, 131, 107, 0.726);
 }
 #connexion_form #container #bt-container {
   display: flex;
