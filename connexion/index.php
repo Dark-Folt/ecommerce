@@ -20,24 +20,26 @@
                 </div>
             </form>
         </fieldset>-->
-        <form methode="post" action="/action_page.php" id="connexion_form">
+        <form methode="post" action="connexion.php" class="user-form">
             <div id="container">
-                <legend>Identifiez-vous</legend>
+                <div class="form-header">
+                    <a href="/">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                        </svg>
+                    </a>
+                    <h3 class="legend">Inscrivez-vous</h3>
+                </div>
                 <div class="input-container" id="email-container">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-left: 2px;">
-                        <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-                    </svg>
-                    <input type="email" placeholder="Email" name="email" class="form-control" id="email-input">
+                    <input type="email" placeholder="Email" name="email" class="form-control" id="email-input" autocomplete="off">
                 </div>
                 <div class="input-container" id="pwd-container">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 6a1 1 0 0 1 2 0v1H7V6zm3 0v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
-                    </svg>
                     <input type="password" placeholder="Password" name="psw" class="form-control" id="pwd-input">
                 </div>
-                <div id="bt-container">
-                    <button type="button" class="btn btn-success btn-lg">Se connecter</button>
-                    <button type="button" class="btn btn-outline-success btn-lg" id="bt-ccompte">Créer un compte</button>
+                <div class="bt-container">
+                    <button type="submit" class="btn btn-success btn-lg">Se connecter</button>
+                    <a href="../inscription"><button type="button" class="btn btn-outline-success btn-lg bt-user-form">Créer un compte</button></a>
                 </div>
             </div>
         </form>
