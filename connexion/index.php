@@ -6,20 +6,7 @@
         <!-- include contient le head general avec touts les links-->
         <?php include "../include/head.html";?>
     </head>
-    <body id="body_connexion">
-        <!--<fieldset style="border: 1px solid blue;" id="fieldset_ins">
-            <legend>Connectez-vous</legend>
-            <form methode="post" action="inscription.php">
-                <div>
-                    <label for="">E-mail</label>
-                    <input type="email" class="form-control" aria-describedby="emailHelp">
-                </div>
-                <div>
-                    <label for="">Mot de passe:</label>
-                    <input type="password" class="form-control">
-                </div>
-            </form>
-        </fieldset>-->
+    <body>
         <form methode="post" action="connexion.php" class="user-form">
             <div id="container">
                 <div class="form-header">

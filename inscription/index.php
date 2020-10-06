@@ -6,8 +6,8 @@
         <!-- include contient le head general avec touts les links-->
         <?php include "../include/head.html";?>
     </head>
-    <body id="body_connexion">
-        <form methode="post" action="connexion.php" class="user-form">
+    <body>
+        <form methode="post" action="inscription.php" class="user-form">
             <div id="container">
                 <div class="form-header">
                     <a href="/connexion">
@@ -18,7 +18,7 @@
                     </a>
                     <h3 class="legend">Inscrivez-vous</h3>
                 </div>
-                <div class="input-container" id="email-container">
+                <div class="input-container">
                     <input type="email" placeholder="Email" name="email" class="form-control" autocomplete="off">
                 </div>
                 <div class="input-container">

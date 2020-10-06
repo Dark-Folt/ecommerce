@@ -8611,19 +8611,28 @@ h3 {
   }
 }
 /*maintenant j'ai toutes les var de bootstrap*/
-#body_connexion {
-  justify-content: center;
-}
-
 div.form-header {
-  border: 1px solid red;
+  position: relative;
+  margin-bottom: 20px;
 }
 div.form-header a {
-  border: 1px solid #434d42;
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  color: gainsboro;
+}
+div.form-header a svg {
+  height: 30px;
+  width: 30px;
+}
+div.form-header a:hover {
+  color: #9c9292;
 }
 div.form-header h3.legend {
-  margin-bottom: 20px;
+  margin: 0px;
   text-align: right;
+  font-size: 40px;
 }
 
 form.user-form {
