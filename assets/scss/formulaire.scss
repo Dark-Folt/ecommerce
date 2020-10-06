@@ -1,17 +1,31 @@
-#body_connexion {
-    justify-content: center;
+body#body_connexion {
+    //justify-content: center;
     //background-color: rgba(96, 255, 255, 0.137);
 }
 
 div.form-header{
-    border: 1px solid red;
+    position: relative;
+    margin-bottom: 20px;
 
     a{
-        border: 1px solid rgb(67, 77, 66);
+        display: block;
+        position: absolute;
+        top: 12px;
+        left: 0px;
+        color: gainsboro;
+        svg{
+            height: 30px;
+            width: 30px;
+        }
+        &:hover{
+            color: rgb(156, 146, 146);
+        }
     }
+
     h3.legend{
-        margin-bottom: 20px;
+        margin: 0px;
         text-align: right;
+        font-size: 40px;
     }
 }
 
