@@ -8611,7 +8611,54 @@ h3 {
   }
 }
 /*maintenant j'ai toutes les var de bootstrap*/
-body {
+#body_connexion {
+  justify-content: center;
+}
+
+div.form-header {
+  border: 1px solid red;
+}
+div.form-header a {
+  border: 1px solid #434d42;
+}
+div.form-header h3.legend {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+form.user-form {
+  width: 500px;
+  margin: 100px auto 0px auto;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px #dedede;
+  padding: 25px;
+}
+form.user-form #container .input-container {
+  margin: 10px;
+  position: relative;
+}
+form.user-form #container .input-container svg {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 10px;
+}
+form.user-form #container .input-container input {
+  height: 50px;
+  padding-left: 25px;
+  border-radius: 8px;
+}
+form.user-form #container div.bt-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+form.user-form #container div.bt-container button.bt-user-form:hover {
+  color: #FFF;
+  transition: all 0.2s;
+}
+
+.bg {
   margin: 0px;
 }
 
@@ -8650,41 +8697,6 @@ header #div-c #connexion_lien svg, header #div-c #panier_lien svg {
 header #div-c #connexion_lien {
   margin-right: 5px;
   background-color: #337ab7;
-}
-#body_connexion {
-  justify-content: center;
-}
-
-#connexion_form {
-  width: 70%;
-  padding: 5px;
-  margin-top: 10px;
-  margin-left: 32%;
-}
-#connexion_form #container {
-  width: 50%;
-  border: 1px solid darkgray;
-}
-#connexion_form #container .input-container {
-  margin: 10px;
-  position: relative;
-}
-#connexion_form #container .input-container svg {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  top: 10px;
-}
-#connexion_form #container .input-container input {
-  height: 50px;
-  width: 90%;
-  padding-left: 35px;
-  border-radius: 8px;
-}
-#connexion_form #container #bt-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=accueil.css.map */

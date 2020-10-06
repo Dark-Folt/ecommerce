@@ -4,7 +4,7 @@
        <title>Accueil</title>
        <?php include "include/head.html";?>
     </head>
-    <body>
+    <body class="bg">
         <?php include "include/header.html"; ?>
         <footer></footer>
     </body>
