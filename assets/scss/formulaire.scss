@@ -1,0 +1,57 @@
+#body_connexion {
+    justify-content: center;
+    //background-color: rgba(96, 255, 255, 0.137);
+}
+
+div.form-header{
+    border: 1px solid red;
+
+    a{
+        border: 1px solid rgb(67, 77, 66);
+    }
+    h3.legend{
+        margin-bottom: 20px;
+        text-align: right;
+    }
+}
+
+form.user-form{
+    width: 500px;
+    margin: 100px auto 0px auto ;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #dedede;
+    padding: 25px;
+
+    #container{
+
+        .input-container{
+            margin: 10px;
+            position: relative;
+
+            svg{
+                position: absolute;
+                height: 30px;
+                width: 30px;
+                top: 10px;
+            }
+            input{
+                height: 50px;
+                padding-left: 25px;
+                border-radius: 8px;
+            }
+        }
+
+        div.bt-container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            button.bt-user-form:hover{
+                color: #FFF;
+                transition: all 0.2s;
+            }
+
+        }
+
+    }
+}

@@ -1,8 +1,10 @@
 @import 'bootstrap/bootstrap'; /*maintenant j'ai toutes les var de bootstrap*/
+@import 'formulaire.scss';
 
-body{
+.bg{
     margin: 0px;
 }
+
 header
 {
     width: 100%;
@@ -67,50 +69,5 @@ header
 
 }
 
-#body_connexion {
-    justify-content: center;
-}
-
-#connexion_form{
-    width: 70%;
-    margin-top: 10px;
-    margin-left: 32%;
-
-    #container{
-        width: 50%;
-        border: 1px solid darkgray;
-
-        .input-container{
-            margin: 10px;
-            position: relative;
-
-            svg{
-                position: absolute;
-                height: 30px;
-                width: 30px;
-                top: 10px;
-            }
-            input{
-                height: 50px;
-                width: 90%;
-                padding-left: 35px;
-                border-radius: 8px;
-            }
-        }
-        #pwd-container {
-            #pwd-input{
-            }
-        }
-
-        #bt-container{
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-
-            #bt-ccompte{
-            }
-        }
-    }
-}
 
 
