@@ -19,13 +19,12 @@
                     <h3 class="legend">Connectez-vous</h3>
                 </div>
                 <div class="input-container">
-                    <input type="email" placeholder="Email" name="email" class="form-control" autocomplete="off">
+                    <input type="email" placeholder="Email" name="email" class="form-control" autocomplete="off" require>
                 </div>
                 <div class="input-container">
-                    <input type="password" placeholder="Password" name="password" class="form-control">
+                    <input type="password" placeholder="Password" name="password" class="form-control" require>
                 </div>
                 <div class="bt-container">
-                    <!-- <button type="submit" class="btn btn-success btn-lg">Se connecter</button> -->
                     <input type="submit" class="btn btn-success btn-lg" name="submit-btn">
                     <a href="../inscription"><button type="button" class="btn btn-outline-success btn-lg bt-user-form">Créer un compte</button></a>
                 </div>
