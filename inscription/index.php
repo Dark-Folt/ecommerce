@@ -30,7 +30,7 @@
                 </div>
                 <div class="bt-container">
                     <!-- <button type="submit" class="btn btn-outline-success btn-lg bt-user-form" name="valider">Créer mon compte</button> -->
-                    <input type="submit" name="submit-btn" class="btn btn-lg" value="Créer mon compte">
+                    <input type="submit" name="submit-btn" class="submit-input" id="register-input" value="Créer mon compte">
                 </div>
             </div>
         </form>

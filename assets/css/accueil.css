@@ -8657,6 +8657,28 @@ form.user-form #container .input-container input {
   padding-left: 25px;
   border-radius: 8px;
 }
+form.user-form #container .submit-input {
+  width: 170px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+}
+form.user-form #container #connect-input {
+  height: 48px;
+  background-color: #28a745;
+  color: #FFF;
+  border-color: #28a745;
+}
+form.user-form #container #register-input {
+  height: 50px;
+  color: #28a745;
+  background-color: #FFF;
+}
+form.user-form #container input#register-input:hover {
+  color: #FFF;
+  background-color: #28a745;
+  transition: all 0.2s;
+}
 form.user-form #container div.bt-container {
   display: flex;
   justify-content: space-around;

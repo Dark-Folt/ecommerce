@@ -1,4 +1,5 @@
 
+
 div.form-header{
     position: relative;
     margin-bottom: 20px;
@@ -49,6 +50,32 @@ form.user-form{
                 padding-left: 25px;
                 border-radius: 8px;
             }
+        }
+
+        .submit-input{
+            width: 170px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        #connect-input{
+            height: 48px;
+            background-color: #28a745;
+            color: #FFF;
+            border-color: #28a745;
+        }
+
+        #register-input{
+            height: 50px;
+            color: #28a745;
+            background-color: #FFF;
+        }
+
+        input#register-input:hover{
+            color: #FFF;
+            background-color: #28a745;
+            transition: all 0.2s;
         }
 
         div.bt-container{

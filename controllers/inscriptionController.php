@@ -63,6 +63,8 @@
             ));
 
             echo 'Le compte a bien été crée</br>';
+        }else{
+            header('Location:../inscription/');
         }
 
     }
