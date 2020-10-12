@@ -25,7 +25,7 @@
                     <input type="password" placeholder="Password" name="password" class="form-control" require>
                 </div>
                 <div class="bt-container">
-                    <input type="submit" class="btn btn-success btn-lg" name="submit-btn">
+                    <input type="submit" class="submit-input" id="connect-input" name="submit-btn" value="Se connecter">
                     <a href="../inscription"><button type="button" class="btn btn-outline-success btn-lg bt-user-form">Créer un compte</button></a>
                 </div>
             </div>
