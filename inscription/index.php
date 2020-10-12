@@ -20,13 +20,13 @@
                     <h3 class="legend">Inscrivez-vous</h3>
                 </div>
                 <div class="input-container">
-                    <input type="email" placeholder="Email" name="email" class="form-control" autocomplete="off">
+                    <input type="email" placeholder="Email" name="email" class="form-control" autocomplete="off" require>
                 </div>
                 <div class="input-container">
-                    <input type="password" placeholder="Mot de passe" name="password" class="form-control">
+                    <input type="password" placeholder="Mot de passe" name="password" class="form-control" require>
                 </div>
                 <div class="input-container">
-                    <input type="password" placeholder="Confimer le mot de passe" name="password-confirm" class="form-control">
+                    <input type="password" placeholder="Confimer le mot de passe" name="password-confirm" class="form-control" require>
                 </div>
                 <div class="bt-container">
                     <!-- <button type="submit" class="btn btn-outline-success btn-lg bt-user-form" name="valider">Créer mon compte</button> -->
