@@ -53,6 +53,7 @@
             */
             if(password_verify($_POST['password'], $client->password)) {
                 echo 'ok</br>';
+                header('Location: ../');
             }else{
                 header('Location: ../connexion/');
             }
