@@ -62,7 +62,17 @@
                 'password' => password_hash($_POST['password'],PASSWORD_BCRYPT)
             ));
 
-            echo 'Le compte a bien été crée</br>';
+
+            /*
+                Nous allons enoyer le mail de vérification au client.
+                Pour cela nous allons charger le fichier qui contient
+                le corps du message à envoyer (include/messageConfirm)
+            */
+
+            require_once ('../include/MailSender.php');
+
+            $mailer = new MailSender();
+            $mailer->envoyerMailConfirmation($_POST['email']);
         }else{
             header('Location:../inscription/');
         }
