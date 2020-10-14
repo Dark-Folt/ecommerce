@@ -41,7 +41,7 @@ class MailSender
         $this->mailer->Port=465;
         $this->mailer->Username='ecommerce2020.shop@gmail.com';
         $this->mailer->Password='Meco12-76'; //ton mdp gmail
-        $this->mailer->SetFrom('ecommerce2020.shop@abbe.com');
+        $this->mailer->SetFrom("noreply@boson.com");
         $this->mailer->CharSet="utf-8";
 
     }
@@ -49,9 +49,14 @@ class MailSender
     public function envoyerMailConfirmation($client_email)
     {
         require_once 'corpsMails.php';
-        $this->mailer->Subject = "Confirmation de compte";
-        $this->mailer->Body = $ConfirmCompte;//ConfirmeCompte est definie dans 'corpsMails.php'
-        $this->mailer->AddAddress($client_email);
+        try{
+            $this->mailer->Subject = "Confirmation de compte";
+            $this->mailer->Body = $ConfirmCompte;//ConfirmeCompte est definie dans 'corpsMails.php'
+            $this->mailer->AddAddress($client_email);
+            $this->mailer->Send();
+        }catch(Exception $e){
+            die("Erreur sur l'envoie du mail de confirmation".$e->getMessage());
+        }
 
         if(!$this->mailer->Send()){
             echo 'E-mail non envoyé';
