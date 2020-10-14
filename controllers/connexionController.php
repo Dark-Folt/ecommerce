@@ -48,7 +48,7 @@
             $client = $req->fetch(); //fetch nous retourne notre objet client
 
             /*
-                Ici on a pas besoinde hasher le mot de passe c'est juste pour vérifier mais pas le stoker
+                Ici on a pas besoin de hasher le mot de passe c'est juste pour vérifier mais pas le stoker
                 vue que le mot de passe est envoyé par post alors c'est bon
             */
             if(password_verify($_POST['password'], $client->password)) {
