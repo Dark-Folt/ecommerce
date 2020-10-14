@@ -53,26 +53,38 @@
         /*
             Une fois arrivé là on va verifier si le tab est vide
             si il est vide alors on interagire avec la BD
+            et inserer notre nouveau client juste avec son mail et son mdp 
+            le reste il le fera quand il le souhaitera dans son profil
+            ensuite nous inserrons aussi un confirm_token qui va nous servir
+            à bien confirmer le compte mail du client
+
+            pour le confirm_token on utilise open_ssl_random_pseudo_byte()
+            qui genere une chaine psedoaléotoire que l'on va hasher avec un petit md5
+            on prefere la reduire ensuite pour quelle ne soit pas longue
+            La fonctino permetant de faire ca est dans MailSender.php
         */
         if(empty($errors)){
-
-            $req = $pdo->prepare('INSERT INTO client(email, password) VALUES(:email, :password)');
-            $req->execute(array(
-                'email'=> $_POST['email'],
-                'password' => password_hash($_POST['password'],PASSWORD_BCRYPT)
-            ));
-
 
             /*
                 Nous allons enoyer le mail de vérification au client.
                 Pour cela nous allons charger le fichier qui contient
-                le corps du message à envoyer (include/messageConfirm)
+                le corps du message à envoyer (include/MailSender)
             */
 
             require_once ('../include/MailSender.php');
 
-            $mailer = new MailSender();
-            $mailer->envoyerMailConfirmation($_POST['email']);
+            $mailer         = new MailSender();
+            $confirm_token  = $mailer->genererConfirmToken();
+            
+
+            $req = $pdo->prepare('INSERT INTO client(email, password, confirm_token) VALUES(:email, :password, :confirm_token)');
+            $req->execute(array(
+                'email'         => $_POST['email'],
+                'password'      => password_hash($_POST['password'],PASSWORD_BCRYPT),
+                'confirm_token' => $confirm_token
+            ));
+
+            $mailer->envoyerMailConfirmation($_POST['email'], $confirm_token);
         }else{
             header('Location:../inscription/');
         }
