@@ -7,7 +7,7 @@
     $dbhost="localhost";//127.0.0.1
     $dbport=3306; //port qu'on utilise avec MAMP
     $dbuser="root";
-    $dbpasswd="root";
+    $dbpasswd="";
      
     try {
         $pdo = new PDO('mysql:host='.$dbhost.';port='.$dbport.';dbname='.$db.'', $dbuser, $dbpasswd);
