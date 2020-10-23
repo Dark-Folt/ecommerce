@@ -5,3 +5,5 @@ créez une interface Internet à accès privé lui permettant d’ajouter ou d�
 En particulier, le nombre d’articles vendus par cette PME est relativement limité comparativement à ceux du site d’Eyrolles. 
 Cela peut entraîner des simplifications dans la structure de la base,
 comme le fait de ne pas créer de table spéciale pour enregistrer le nom des marques des produits en magasin.
+
+

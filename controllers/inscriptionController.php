@@ -75,6 +75,7 @@
 
             $mailer         = new MailSender();
             $confirm_token  = $mailer->genererConfirmToken();
+            //echo 'token: '.$confirm_token.'</br>';
             
 
             $req = $pdo->prepare('INSERT INTO client(email, password, confirm_token) VALUES(:email, :password, :confirm_token)');
