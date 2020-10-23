@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Connexion</title>
+        <title>Inscription</title>
 
         <!-- include contient le head general avec touts les links-->
         <link rel="stylesheet" type="text/css" href="../assets/css/accueil.css">
