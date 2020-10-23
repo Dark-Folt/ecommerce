@@ -68,14 +68,13 @@
             /*
                 Nous allons enoyer le mail de vérification au client.
                 Pour cela nous allons charger le fichier qui contient
-                le corps du message à envoyer (include/MailSender)
+                la classe MailSender
             */
 
             require_once ('../include/MailSender.php');
 
             $mailer         = new MailSender();
             $confirm_token  = $mailer->genererConfirmToken();
-            //echo 'token: '.$confirm_token.'</br>';
             
 
             $req = $pdo->prepare('INSERT INTO client(email, password, confirm_token) VALUES(:email, :password, :confirm_token)');
@@ -86,6 +85,7 @@
             ));
 
             $mailer->envoyerMailConfirmation($_POST['email'], $confirm_token);
+            
         }else{
             header('Location:../inscription/');
         }
