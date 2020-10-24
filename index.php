@@ -1,4 +1,3 @@
-<?php require_once ('models/Client.php'); ?>
 <!DOCTYPE  html>
 <html>
     <head>

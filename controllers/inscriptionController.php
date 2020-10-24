@@ -85,6 +85,7 @@
             ));
 
             $mailer->envoyerMailConfirmation($_POST['email'], $confirm_token);
+            $req->closeCursor();
             
         }else{
             header('Location:../inscription/');

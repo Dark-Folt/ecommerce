@@ -15,24 +15,45 @@
             $client_email = $_GET['email'];
             $client_token = $_GET['confirm_token'];
             require_once('../include/connexionDB.php');
-                $req = $pdo->prepare('SELECT id FROM client WHERE email = :email AND confirm_token = :token');
-                $req->execute(array(
-                    'email'         => $client_email,
-                    'token'         => $client_token
-                ));
+            $req = $pdo->prepare('SELECT id, email_confirme FROM client WHERE email = :email AND confirm_token = :token');
+            $req->execute(array(
+                'email'         => $client_email,
+                'token'         => $client_token
+            ));
 
-                $client = $req->fetch();
-                if($client){
-                    echo 'Votre compte a bien été confirmé </br>';
-                }
-
+            /*
+                Fetch nous renvoie un objet de type client
+                nous allons verifier cet objet
+                s'il est vide on update en mettant email_confirm à 1
+            */
+            $client = $req->fetch();
+            $req->closeCursor();
+            
+            /*
+                Ce test permet de verifier une seule fois le mail d'un client
+                s'il retente de reutilisé le même lien il ne fonctionnera plus
+            */
+            if($client && $client->email_confirme == 0){
                 //après avoir verifier on met le champ email_confirm à 1
                 $req2 = $pdo->prepare('UPDATE  client SET email_confirme=1 WHERE email = :email');
                 $req2->execute(array(
                     'email' => $_GET['email']
                 ));
 
-            //on redirige le client vers l'aceuil
+                $req2->closeCursor();
+
+            }else {
+                echo "Ce lien a déjà été utilisé !";
+            }
+
+
+
+            /*
+                on redirige le client vers l'aceuil
+                dans tout les cas car avec la variable de session
+                nous allons gerer la connexion du client
+                donc si l'utilisatuer n'est pas connecter il aura une autre page
+            */
             header('Location: ../');
         }
     }
