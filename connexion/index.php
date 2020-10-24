@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['connect'])){
+    header('Location: ../sessions/espaceClient.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
