@@ -15,9 +15,9 @@
                             </p>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Livres,BD</a></li>
-                            <li><a href="#">Jeux vidéos</a></li>
-                            <li><a href="#">Téléphonie</a></li>
+                            <li><a href="sessions/categories/documents.php">Livres,BD</a></li>
+                            <li><a href="sessions/categories/jeuxVideos.php">Jeux vidéos</a></li>
+                            <li><a href="sessions/categories/telephonie.php">Téléphonie</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Separated link</a></li>
                             <li role="separator" class="divider"></li>
