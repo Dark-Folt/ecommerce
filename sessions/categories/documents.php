@@ -1,3 +1,5 @@
 <?php
-	echo "je video";
+session_start();
+echo "je video";
+session_destroy();
 ?>

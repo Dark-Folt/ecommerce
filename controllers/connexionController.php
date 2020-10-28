@@ -33,9 +33,9 @@ if(isset($_POST['submit-btn']))
 
         include('../include/connexionDB.php');
 
-        $req = $pdo->prepare('SELECT email, password FROM client WHERE email =:email');
+        $req = $pdo->prepare('SELECT email, password, email_confirme FROM client WHERE email =:email');
         $req->execute(array(
-            'email' => $email,
+            'email' => $email
         ));
 
         //TODO: Vérification en JavaScript
@@ -56,10 +56,22 @@ if(isset($_POST['submit-btn']))
         */
         if($client && password_verify($_POST['password'], $client->password)) {
 
-            $_SESSION['connect'] = 1;
-            $_SESSION['email'] = $client->email;
-            //TODO:javascript animation a faire 
-            header('Location: ../');
+            if($client->email_confirme == 0)
+            {
+                ?>
+                    <!-- affichage de l'erreur-->
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+                    <div class="alert alert-danger" style="text-align: center; width: 60%; height: 10%; margin: auto;">
+                      <strong>Erreur!</strong> Vous devez d'abord confirmer votre email.
+                    </div>
+                <?php
+                
+            }else {
+                $_SESSION['connect'] = 1;
+                $_SESSION['email'] = $client->email;
+                //TODO:javascript animation a faire 
+                header('Location: ../');
+            }
         }else{
             header('Location: ../connexion/');
         }
