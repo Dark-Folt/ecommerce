@@ -37,9 +37,10 @@ form.user-form {
       border-radius: 8px; }
   form.user-form #container .submit-input {
     width: 170px;
-    font-size: 18px;
     border: none;
     border-radius: 8px; }
+  form.user-form #container #connect-input, form.user-form #container #register-input, form.user-form #container .bt-user-form {
+    font-size: 18px; }
   form.user-form #container #connect-input {
     height: 48px;
     background-color: #28a745;
@@ -57,6 +58,10 @@ form.user-form {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
+    form.user-form #container div.bt-container button.bt-user-form {
+      height: 48px;
+      width: 170px;
+      border-radius: 8px; }
     form.user-form #container div.bt-container button.bt-user-form:hover {
       color: #FFF;
       transition: all 0.2s; }
