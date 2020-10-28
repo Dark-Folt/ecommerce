@@ -54,9 +54,12 @@ form.user-form{
 
         .submit-input{
             width: 170px;
-            font-size: 18px;
             border: none;
             border-radius: 8px;
+        }
+
+        #connect-input,#register-input,.bt-user-form {
+            font-size: 18px;
         }
 
         #connect-input{
@@ -83,6 +86,11 @@ form.user-form{
             justify-content: space-around;
             flex-wrap: wrap;
 
+            button.bt-user-form {
+                height: 48px;
+                width: 170px;
+                border-radius: 8px;
+            }
             button.bt-user-form:hover{
                 color: #FFF;
                 transition: all 0.2s;
