@@ -3,6 +3,7 @@
     <head>
        <title>Mes Informations</title>
        <link rel="stylesheet" type="text/css" href="../../assets/css/index.css">
+        <?php include('../../include/head.php');?>
     </head>
     <body>
     	<form method="post" action="../../controllers/connexionController.php" class="user-form">

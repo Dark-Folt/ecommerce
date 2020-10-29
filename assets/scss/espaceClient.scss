@@ -1,3 +1,46 @@
 body{
-	maring: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav {
+	ul{
+		margin: 0px;
+		padding: 0px;
+
+		li{
+			list-style-type: none;
+			padding: 10px;
+			margin: 0px;
+
+			a{
+				text-decoration: none;
+				color: rgba(177, 174, 174, 0.521);
+				svg{
+					color: darkgrey;
+					height: 50px;
+					width: 50px;
+				}
+				p{
+					position: absolute;
+					width: 380px;
+					display: inline-block;
+					margin-left: 50px;
+				}
+			}
+
+			&:hover{
+				border-radius: 8px;
+				border: 1px solid rgba(128, 128, 128, 0.89);
+				color: rgb(27, 26, 26);
+				a{
+					color: rgb(41, 39, 39);
+				}
+			}
+		}
+
+		.menu{
+			//display: none;
+		}
+	}
 }
