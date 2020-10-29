@@ -66,35 +66,36 @@ form.user-form {
       color: #FFF;
       transition: all 0.2s; }
 
-body {
-  margin: 0px;
-  padding: 0px; }
-
 nav ul {
   margin: 0px;
   padding: 0px; }
   nav ul li {
     list-style-type: none;
-    padding: 10px;
     margin: 0px; }
     nav ul li a {
       text-decoration: none;
       color: rgba(177, 174, 174, 0.521); }
       nav ul li a svg {
-        color: darkgrey;
         height: 50px;
-        width: 50px; }
+        width: 50px;
+        padding: 2px;
+        color: darkgrey; }
       nav ul li a p {
         position: absolute;
         width: 380px;
+        height: 50px;
         display: inline-block;
         margin-left: 50px; }
-    nav ul li:hover {
+    nav ul li:hover, nav ul li:focus {
       border-radius: 8px;
       border: 1px solid rgba(128, 128, 128, 0.89);
       color: #1b1a1a; }
-      nav ul li:hover a {
+      nav ul li:hover a, nav ul li:focus a {
         color: #292727; }
+
+body {
+  margin: 0px;
+  padding: 0px; }
 
 .bg {
   margin: 0px; }
