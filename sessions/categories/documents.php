@@ -1,5 +1,3 @@
 <?php
-session_start();
-echo "je video";
-session_destroy();
+echo "je suis dans document";
 ?>
