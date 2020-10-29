@@ -1,6 +1,10 @@
 @import 'formulaire.scss';
 @import 'espaceClient.scss';
 
+body{
+    margin: 0px;
+    padding: 0px;
+}
 .bg{
     margin: 0px;
 }
@@ -23,7 +27,9 @@ header
         }
 
         #div-categories {
+            
             margin-top: 5px;
+
             svg {
                 height: 20px;
                 width: 20px;
@@ -32,7 +38,9 @@ header
     }
 
     #div-c {
+
         #connexion_lien,#panier_lien{
+
             display: inline-block;
             width: 150px;
             text-align: center;
@@ -47,6 +55,7 @@ header
                 width: 20px;
             }
         }
+
         #connexion_lien{
             margin-right: 5px;
             background-color: #337ab7;
