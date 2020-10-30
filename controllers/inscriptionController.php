@@ -24,25 +24,25 @@
             si le mail est valide, et ben on vérifie si il ne figure pas dans la
             base donné car un mail doit etre utilisé qu'une seule fois
         */
-        require_once('../include/connexionDB.php');
+        //require_once('../include/connexionDB.php');
+        require_once ('../include/MyDB.php');
+        $DB = new MyDB();
+
         if(empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
             $errors[] = "Votre email n'est pas valide";
         }else{
             // on verifie si le mail existe deja
-            $req = $pdo->prepare('SELECT id FROM client WHERE email = :email');
+            /*$req = $pdo->prepare('SELECT id FROM client WHERE email = :email');
             $req->execute(array(
                 'email' => $_POST['email']
-            ));
+            ));*/
 
+            $client = $DB->query('SELECT id FROM client WHERE email = :email',array('email' => $_POST['email']))->fetch();
             //TODO:Faire  les vérifs en JavaScript
-            /*
-                on utilise fetch() pour avoir le premier enregistrement
-                si le result n'est pas vide alors le mail est dejà utilisé
-            */
-            $client = $req->fetch();
+
+            //si l'objet n'est pas vide alors le mail est utilisé
             if($client){
                 $errors[] = "Cet email est déjà utilsé";
-                echo 'email utilisé</br>';
             }
         }
 
@@ -76,16 +76,16 @@
             $mailer         = new MailSender();
             $confirm_token  = $mailer->genererConfirmToken();
             
-
-            $req = $pdo->prepare('INSERT INTO client(email, password, confirm_token) VALUES(:email, :password, :confirm_token)');
-            $req->execute(array(
+            //données de la requete preparée
+            $data = array(
                 'email'         => $_POST['email'],
                 'password'      => password_hash($_POST['password'],PASSWORD_BCRYPT),
                 'confirm_token' => $confirm_token
-            ));
+            );
 
+            $DB->query('INSERT INTO client(email, password, confirm_token) VALUES(:email, :password, :confirm_token)', $data);
+            $DB->closeDB();
             $mailer->envoyerMailConfirmation($_POST['email'], $confirm_token);
-            $req->closeCursor();
             
         }else{
             header('Location:../inscription/');
