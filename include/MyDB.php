@@ -96,12 +96,13 @@ class MyDB{
      * on garde ensuite la reference de la requetete pour pouvoir fermer la BD
      * @param string la requete à exécuter
      * @param boolean tableau assossiatif qui contient les données de la requete preparée
-     * @return PDO:FETCH_OBJ
+     * @return 
      */
     public function query($q, $data = array()){
         $r = $this->pdo->prepare($q);
         if(!empty($data)){ $r->execute($data);
         }else{ $this->pdo->query($q); }
+        
         $this->ref_query = $r;
         return $r;
     }
