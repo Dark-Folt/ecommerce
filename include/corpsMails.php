@@ -9,7 +9,7 @@
                     <p>Votre compte a bien été crée, </br> 
                     Vérifier le en cliquant sur lien ci-dessous.
                     </p>
-                    <a href=\"http://localhost/ecommerce/controllers/mail_verification.php?email=$client_email&confirm_token=$confirm_token\">Confirmez votre compte</a>
+                    <a href=\"http://localhost/ecommerce/controllers/mailVerificationController.php?email=$client_email&confirm_token=$confirm_token\">Confirmez votre compte</a>
                 </div>
             </body>
         </html>
