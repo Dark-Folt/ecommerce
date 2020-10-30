@@ -1,3 +1,26 @@
+<?php
+session_start();
+require_once('../../include/MyDB.php');
+require_once('../../models/Client.php');
+
+$DB = new MyDB();
+/**
+ * pour recuperer les informations 
+ * on utilise le mail du client qui est deja dans la variable de session
+ */
+if(isset($_SESSION['email']))
+{
+    $email = $_SESSION['email'];
+    /**
+     * creation d'un objet client à partir des donnes recu par la requete
+     * fetch(PDO::FETCH_ASSOC) permet d'avoir les données sous forme d'array()
+     */
+    $client = new Client($DB->query('SELECT * FROM client WHERE email = ?', array($email))->fetch(PDO::FETCH_ASSOC));
+}
+$DB->closeDB();
+
+?>
+
 <!DOCTYPE  html>
 <html>
     <head>
@@ -6,7 +29,7 @@
         <?php include('../../include/head.php');?>
     </head>
     <body>
-    	<form method="post" action="../../controllers/connexionController.php" class="user-form">
+    	<form method="post" action="../../controllers/mesInformationsController.php" class="user-form">
             <div id="container">
                 <div class="form-header">
                     <a href="../client/espaceClient.php"> 
@@ -18,23 +41,25 @@
                     <h3 class="legend">Mes Informations</h3>
                 </div>
                 <div class="input-container">
-                    <input type="text" placeholder="Nom" name="nom" class="form-control" autocomplete="off" require>
+                    <input type="text" placeholder="Nom" name="nom" value = "<?= $client->getNom() ?>" class="form-control" autocomplete="off" require>
                 </div>
                 <div class="input-container">
-                    <input type="text" placeholder="Prénom" name="prenom" class="form-control" autocomplete="off" require>
+                    <input type="text" placeholder="Prénom" name="prenom" value = "<?= $client->getPrenom() ?>" class="form-control" autocomplete="off" require>
                 </div>
                 <div class="input-container">
-                    <input type="text" placeholder="Adresse" name="email" class="form-control" autocomplete="off" require>
+                    <input type="text" placeholder="Adresse" name="adresse" value = "<?= $client->getAdresse() ?>" class="form-control" autocomplete="off" require>
                 </div>
                 <div class="input-container">
-                    <input type="email" placeholder="Email" name="email" class="form-control" autocomplete="off" require>
+                    <input type="email" placeholder="Email" name="email" value = "<?= $client->getEmail() ?>" class="form-control" autocomplete="off" require>
                 </div>
+                <!--
                 <div class="input-container">
                     <input type="password" placeholder="Mot de passe" name="password" class="form-control" require>
                 </div>
                 <div class="input-container">
                     <input type="password" placeholder="Confirmer mot de passe" name="password" class="form-control" require>
                 </div>
+                -->
                 <div class="bt-container">
                     <input type="submit" class="submit-input" id="connect-input" name="submit-btn" value="Mettre à jour">
                 </div>
