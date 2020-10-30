@@ -31,12 +31,10 @@ if(isset($_POST['submit-btn']))
         //si le tableau n'est pas vide on redirige
         $email = $_POST['email'];
 
-        include('../include/connexionDB.php');
-
-        $req = $pdo->prepare('SELECT email, password, email_confirme FROM client WHERE email =:email');
-        $req->execute(array(
-            'email' => $email
-        ));
+        require_once ('../include/MyDB.php');
+        $DB = new MyDB();
+        $client = $DB->query('SELECT email, password, email_confirme FROM client WHERE email =:email',array('email' => $email))->fetch();
+        $DB->closeDB();
 
         //TODO: Vérification en JavaScript
         /*
@@ -46,9 +44,6 @@ if(isset($_POST['submit-btn']))
             le client sont valides.
             On va alors vérifier si le mot de passe correspond avec password_verify
         */
-        $client = $req->fetch(); //fetch nous retourne notre objet client
-
-        $req->closeCursor();//fermeture de la BD
 
         /*
             Ici on a pas besoin de hasher le mot de passe c'est juste pour vérifier mais pas le stoker
@@ -58,14 +53,11 @@ if(isset($_POST['submit-btn']))
 
             if($client->email_confirme == 0)
             {
-                ?>
-                    <!-- affichage de l'erreur-->
-                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-                    <div class="alert alert-danger" style="text-align: center; width: 60%; height: 10%; margin: auto;">
-                      <strong>Erreur!</strong> Vous devez d'abord confirmer votre email.
-                    </div>
-                <?php
-                
+                /*
+                redirection vers la page d'erreur en enoyer dans l'url l'erreur 
+                pour pouvoir l'afficher dans la page d'erreur
+                */
+                header('Location: ../include/errors/pageDErreur.php?verif_email=false');
             }else {
                 $_SESSION['connect'] = 1;
                 $_SESSION['email'] = $client->email;
@@ -73,7 +65,7 @@ if(isset($_POST['submit-btn']))
                 header('Location: ../');
             }
         }else{
-            header('Location: ../connexion/');
+            header('Location: ../include/errors/pageDErreur.php?donnees_saisie=false');
         }
 
     }else{
