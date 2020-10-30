@@ -41,15 +41,19 @@ $DB->closeDB();
                     <h3 class="legend">Mes Informations</h3>
                 </div>
                 <div class="input-container">
+                    <label for="nom">Nom:</label>
                     <input type="text" placeholder="Nom" name="nom" value = "<?= $client->getNom() ?>" class="form-control" autocomplete="off" require>
                 </div>
                 <div class="input-container">
+                <label>Prénom:</label>
                     <input type="text" placeholder="Prénom" name="prenom" value = "<?= $client->getPrenom() ?>" class="form-control" autocomplete="off" require>
                 </div>
                 <div class="input-container">
+                    <label>Adresse:</label>
                     <input type="text" placeholder="Adresse" name="adresse" value = "<?= $client->getAdresse() ?>" class="form-control" autocomplete="off" require>
                 </div>
                 <div class="input-container">
+                    <label>Email:</label>
                     <input type="email" placeholder="Email" name="email" value = "<?= $client->getEmail() ?>" class="form-control" autocomplete="off" require>
                 </div>
                 <!--

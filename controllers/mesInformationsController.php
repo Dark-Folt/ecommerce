@@ -32,15 +32,15 @@
         }
 
         if(isset($data['nom'])){
-            $DB->query('UPDATE  client SET nom=:nom WHERE email = :email', array('email'=> $email, 'nom' => $data['nom']));
+            $DB->query('UPDATE  client SET nom=:nom WHERE email = :email', array('email'=> $email, 'nom' => ucfirst($data['nom'])));
         }
 
         if(isset($data['prenom'])){
-            $DB->query('UPDATE  client SET prenom=:prenom WHERE email = :email', array('email'=> $email, 'prenom' => $data['prenom']));
+            $DB->query('UPDATE  client SET prenom=:prenom WHERE email = :email', array('email'=> $email, 'prenom' => ucfirst($data['prenom'])));
         }
 
         if(isset($data['adresse'])){
-            $DB->query('UPDATE  client SET adresse=:adresse WHERE email = :email', array('email'=> $email, 'adresse' => $data['adresse']));
+            $DB->query('UPDATE  client SET adresse=:adresse WHERE email = :email', array('email'=> $email, 'adresse' => ucfirst($data['adresse'])));
         }
 
         $DB->closeDB();
