@@ -1,6 +1,12 @@
 <?php
 session_start();
 
+/**
+ * connexionController.php 
+ * est le controller de la page de connection il se charge 
+ * du traitement des données pour ensuite les renvoyé à la vue
+ */
+
 //on vérifie si le bouton a été appuyé
 if(isset($_POST['submit-btn']))
 {
