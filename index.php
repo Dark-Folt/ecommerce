@@ -1,3 +1,6 @@
+<?php
+    require_once('controllers/articleController.php');
+?>
 <!DOCTYPE  html>
 <html>
     <head>
@@ -5,8 +8,23 @@
        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
        <?php include("include/head.php");?>
     </head>
-    <body class="bg">
-        <?php include("include/header.php"); ?>
+    <body>
+        <?php require("include/header.php"); ?>
+        <div class="container-article ">
+        <?php foreach($articles as $article):?>
+            <div class="div-article">
+                <div class="img-container">
+                    <span class="article-prix"><?=$article->getPrix()?> €</span>
+                    <img src="<?= $article->getImage()?>" class="article-img" alt="">
+                </div>
+                <div class="article-body">
+                    <h5 class="article-titre"><?=$article->getNom()?></h5>
+                    <p class="article-description"><?=$article->getDescription()?></p>
+                    <a href="/controllers/articleController.php" class="btn btn-primary">Afficher plus de détails...</a>
+                </div>
+            </div>
+        <?php endforeach ?>
+        </div>
         <footer></footer>
     </body>
 </html>
