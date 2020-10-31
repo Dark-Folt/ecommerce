@@ -22,12 +22,12 @@
                 'token'         => $client_token
             );
 
-            $client = $DB->query('SELECT id, email_confirme FROM client WHERE email = :email AND confirm_token = :token', $data)->fetch();
             /*
                 Fetch nous renvoie un objet de type client
                 nous allons verifier cet objet
                 s'il est vide on update en mettant email_confirm à 1
             */
+            $client = $DB->query('SELECT id, email_confirme FROM client WHERE email = :email AND confirm_token = :token', $data)->fetch();
             
             /*
                 Ce test permet de verifier une seule fois le mail d'un client
