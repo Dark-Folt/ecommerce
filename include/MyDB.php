@@ -101,7 +101,7 @@ class MyDB{
     public function query($q, $data = array()){
         $r = $this->pdo->prepare($q);
         if(!empty($data)){ $r->execute($data);
-        }else{ $this->pdo->query($q); }
+        }else{ $r = $this->pdo->query($q); }
         
         $this->ref_query = $r;
         return $r;
