@@ -1,6 +1,6 @@
 <?php
-require_once('include/MyDB.php');
-require_once('models/Article.php');
+include('include/MyDB.php');
+include('models/Article.php');
 
 $DB = new MyDB();
 $articlesBDD = $DB->query('SELECT * FROM article')->fetchAll(PDO::FETCH_ASSOC);
@@ -9,4 +9,6 @@ foreach($articlesBDD as $article)
 {
     array_push($articles, new Article($article));
 }
+
+$DB->closeDB();
 ?>

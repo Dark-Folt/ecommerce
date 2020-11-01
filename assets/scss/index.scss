@@ -1,12 +1,11 @@
 @import 'formulaire.scss';
 @import 'espaceClient.scss';
 
+
 body{
     margin: 0px;
     padding: 0px;
-}
-.bg{
-    margin: 0px;
+    font-size: 18px;
 }
 
 header
@@ -65,4 +64,48 @@ header
 }
 
 
+.container-article {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 150px;
+
+    .div-article {
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        border: 1px solid rgba(176, 192, 194, 0.568);
+        border-radius: 2px;
+
+        .img-container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            z-index: -1;
+
+            .article-img{
+                height: 130px;
+                max-width: 200px;
+            }
+
+            .article-prix{
+                position: absolute;
+                padding: 2px;
+                right: 0px;
+                top: 0px;
+                color: #fff;
+                font-size: 16px;
+                border-radius: 8px;
+                background-color: #ff1a1a; 
+            }
+        }
+
+        .article-body{
+            text-align: center;
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+}
 

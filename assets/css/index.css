@@ -95,10 +95,8 @@ nav ul {
 
 body {
   margin: 0px;
-  padding: 0px; }
-
-.bg {
-  margin: 0px; }
+  padding: 0px;
+  font-size: 18px; }
 
 header {
   width: 100%;
@@ -129,3 +127,36 @@ header {
   header #div-c #connexion_lien {
     margin-right: 5px;
     background-color: #337ab7; }
+
+.container-article {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 150px; }
+  .container-article .div-article {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid rgba(176, 192, 194, 0.568);
+    border-radius: 2px; }
+    .container-article .div-article .img-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      z-index: -1; }
+      .container-article .div-article .img-container .article-img {
+        height: 130px;
+        max-width: 200px; }
+      .container-article .div-article .img-container .article-prix {
+        position: absolute;
+        padding: 2px;
+        right: 0px;
+        top: 0px;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 8px;
+        background-color: #ff1a1a; }
+    .container-article .div-article .article-body {
+      text-align: center; }
+      .container-article .div-article .article-body a {
+        font-size: 14px; }
