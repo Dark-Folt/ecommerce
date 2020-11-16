@@ -1,6 +1,7 @@
 <?php
-    //require_once('controllers/articleController.php');
+    // require_once('controllers/articleController.php');
     include('controllers/articleController.php');
+    //TODO::PROBLEME DE LIEN VERS LES IMAGES
 ?>
 <!DOCTYPE  html>
 <html>
@@ -21,7 +22,7 @@
                 <div class="article-body">
                     <h5 class="article-titre"><?=$article->getNom()?></h5>
                     <p class="article-description"><?=$article->getDescription()?></p>
-                    <a href="/controllers/articleController.php" class="btn btn-primary">Afficher plus de détails...</a>
+                    <a href="/school/ecommerce/controllers/articleController.php" class="btn btn-primary">Afficher plus de détails...</a>
                 </div>
             </div>
         <?php endforeach ?>

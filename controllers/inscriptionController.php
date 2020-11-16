@@ -72,6 +72,7 @@
             */
 
             require_once ('../include/MailSender.php');
+            
 
             $mailer         = new MailSender();
             $confirm_token  = $mailer->genererConfirmToken();
@@ -88,7 +89,7 @@
             $mailer->envoyerMailConfirmation($_POST['email'], $confirm_token);
             
         }else{
-            header('Location:../inscription/');
+             header('Location:../inscription/');
         }
 
     }
