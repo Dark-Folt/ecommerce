@@ -1,2 +1,4 @@
 include/MailSender.php
-/vendor
+
+/vendor/
+/articles/

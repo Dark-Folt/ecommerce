@@ -1,0 +1,17 @@
+{
+    "name": "ben/ecommerce",
+    "authors": [
+        {
+            "name": "Dark-Folt",
+            "email": "marigo9794@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.1"
+    },
+    "autoload": {
+        "psr-4":{
+            "App\\": "src/"
+        }
+    }
+}

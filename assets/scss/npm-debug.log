@@ -1,0 +1,794 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'bootstrap' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'bootstrap', null ]
+5 verbose cache add name=undefined spec="bootstrap" args=["bootstrap",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'bootstrap',
+6 verbose parsed url   path: 'bootstrap',
+6 verbose parsed url   href: 'bootstrap' }
+7 silly lockFile 3c71cc99-bootstrap bootstrap
+8 verbose lock bootstrap /root/.npm/3c71cc99-bootstrap.lock
+9 verbose tar pack [ '/root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/tmp.tgz',
+9 verbose tar pack   'bootstrap' ]
+10 verbose tarball /root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/tmp.tgz
+11 verbose folder bootstrap
+12 silly lockFile 48cbcf42-tar-bootstrap tar://bootstrap
+13 verbose lock tar://bootstrap /root/.npm/48cbcf42-tar-bootstrap.lock
+14 silly lockFile 22bf7164-3070-0-26708014076575637-tmp-tgz tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/tmp.tgz
+15 verbose lock tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/tmp.tgz /root/.npm/22bf7164-3070-0-26708014076575637-tmp-tgz.lock
+16 silly lockFile 48cbcf42-tar-bootstrap tar://bootstrap
+17 silly lockFile 48cbcf42-tar-bootstrap tar://bootstrap
+18 silly lockFile 22bf7164-3070-0-26708014076575637-tmp-tgz tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/tmp.tgz
+19 silly lockFile 22bf7164-3070-0-26708014076575637-tmp-tgz tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/tmp.tgz
+20 verbose tar unpack /root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/tmp.tgz
+21 silly lockFile cf215af8-3070-0-26708014076575637-package tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/package
+22 verbose lock tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/package /root/.npm/cf215af8-3070-0-26708014076575637-package.lock
+23 silly lockFile 22bf7164-3070-0-26708014076575637-tmp-tgz tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/tmp.tgz
+24 verbose lock tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/tmp.tgz /root/.npm/22bf7164-3070-0-26708014076575637-tmp-tgz.lock
+25 silly gunzTarPerm modes [ '755', '644' ]
+26 silly gunzTarPerm extractEntry package.json
+27 silly gunzTarPerm extractEntry README.md
+28 silly gunzTarPerm extractEntry dist/css/bootstrap-utilities.css
+29 silly gunzTarPerm extractEntry dist/css/bootstrap-grid.css
+30 silly gunzTarPerm extractEntry dist/css/bootstrap-grid.min.css
+31 silly gunzTarPerm extractEntry dist/css/bootstrap-grid.min.css.map
+32 silly gunzTarPerm extractEntry dist/css/bootstrap-reboot.css
+33 silly gunzTarPerm extractEntry dist/css/bootstrap-reboot.css.map
+34 silly gunzTarPerm extractEntry dist/css/bootstrap-reboot.min.css
+35 silly gunzTarPerm extractEntry dist/css/bootstrap-reboot.min.css.map
+36 silly gunzTarPerm extractEntry dist/css/bootstrap-grid.css.map
+37 silly gunzTarPerm extractEntry dist/css/bootstrap-utilities.css.map
+38 silly gunzTarPerm extractEntry dist/css/bootstrap-utilities.min.css
+39 silly gunzTarPerm extractEntry dist/css/bootstrap-utilities.min.css.map
+40 silly gunzTarPerm extractEntry dist/css/bootstrap.css
+41 silly gunzTarPerm extractEntry dist/css/bootstrap.css.map
+42 silly gunzTarPerm extractEntry dist/css/bootstrap.min.css
+43 silly gunzTarPerm extractEntry dist/css/bootstrap.min.css.map
+44 silly gunzTarPerm extractEntry dist/js/bootstrap.bundle.js
+45 silly gunzTarPerm extractEntry dist/js/bootstrap.bundle.min.js
+46 silly gunzTarPerm extractEntry dist/js/bootstrap.min.js
+47 silly gunzTarPerm extractEntry dist/js/bootstrap.esm.js
+48 silly gunzTarPerm extractEntry dist/js/bootstrap.js
+49 silly gunzTarPerm extractEntry dist/js/bootstrap.esm.min.js
+50 silly gunzTarPerm extractEntry dist/js/bootstrap.bundle.js.map
+51 silly gunzTarPerm extractEntry dist/js/bootstrap.esm.min.js.map
+52 silly gunzTarPerm extractEntry dist/js/bootstrap.esm.js.map
+53 silly gunzTarPerm extractEntry dist/js/bootstrap.js.map
+54 silly gunzTarPerm extractEntry dist/js/bootstrap.bundle.min.js.map
+55 silly gunzTarPerm extractEntry dist/js/bootstrap.min.js.map
+56 silly gunzTarPerm extractEntry js/dist/alert.js
+57 silly gunzTarPerm extractEntry js/dist/button.js
+58 silly gunzTarPerm extractEntry js/dist/tooltip.js
+59 silly gunzTarPerm extractEntry js/dist/carousel.js
+60 silly gunzTarPerm extractEntry js/dist/toast.js
+61 silly gunzTarPerm extractEntry js/dist/collapse.js
+62 silly gunzTarPerm extractEntry js/dist/tab.js
+63 silly gunzTarPerm extractEntry js/dist/scrollspy.js
+64 silly gunzTarPerm extractEntry js/dist/dropdown.js
+65 silly gunzTarPerm extractEntry js/dist/popover.js
+66 silly gunzTarPerm extractEntry js/dist/modal.js
+67 silly gunzTarPerm extractEntry js/dist/collapse.js.map
+68 silly gunzTarPerm extractEntry js/dist/alert.js.map
+69 silly gunzTarPerm extractEntry js/dist/dropdown.js.map
+70 silly gunzTarPerm extractEntry js/dist/popover.js.map
+71 silly gunzTarPerm extractEntry js/dist/dom/data.js
+72 silly gunzTarPerm extractEntry js/dist/dom/event-handler.js
+73 silly gunzTarPerm extractEntry js/dist/dom/manipulator.js
+74 silly gunzTarPerm extractEntry js/dist/dom/polyfill.js
+75 silly gunzTarPerm extractEntry js/dist/dom/selector-engine.js
+76 silly gunzTarPerm extractEntry js/dist/dom/data.js.map
+77 silly gunzTarPerm extractEntry js/dist/dom/event-handler.js.map
+78 silly gunzTarPerm extractEntry js/dist/dom/manipulator.js.map
+79 silly gunzTarPerm extractEntry js/dist/dom/polyfill.js.map
+80 silly gunzTarPerm extractEntry js/dist/dom/selector-engine.js.map
+81 silly gunzTarPerm extractEntry js/dist/scrollspy.js.map
+82 silly gunzTarPerm extractEntry js/dist/modal.js.map
+83 silly gunzTarPerm extractEntry js/dist/tab.js.map
+84 silly gunzTarPerm extractEntry js/dist/carousel.js.map
+85 silly gunzTarPerm extractEntry js/dist/toast.js.map
+86 silly gunzTarPerm extractEntry js/dist/button.js.map
+87 silly gunzTarPerm extractEntry js/dist/tooltip.js.map
+88 silly gunzTarPerm extractEntry js/src/alert.js
+89 silly gunzTarPerm extractEntry js/src/carousel.js
+90 silly gunzTarPerm extractEntry js/src/collapse.js
+91 silly gunzTarPerm extractEntry js/src/tooltip.js
+92 silly gunzTarPerm extractEntry js/src/dropdown.js
+93 silly gunzTarPerm extractEntry js/src/button.js
+94 silly gunzTarPerm extractEntry js/src/popover.js
+95 silly gunzTarPerm extractEntry js/src/scrollspy.js
+96 silly gunzTarPerm extractEntry js/src/tab.js
+97 silly gunzTarPerm extractEntry js/src/toast.js
+98 silly gunzTarPerm extractEntry js/src/modal.js
+99 silly gunzTarPerm extractEntry js/src/dom/data.js
+100 silly gunzTarPerm extractEntry js/src/dom/event-handler.js
+101 silly gunzTarPerm extractEntry js/src/dom/manipulator.js
+102 silly gunzTarPerm extractEntry js/src/dom/polyfill.js
+103 silly gunzTarPerm extractEntry js/src/dom/selector-engine.js
+104 silly gunzTarPerm extractEntry js/src/util/index.js
+105 silly gunzTarPerm extractEntry js/src/util/sanitizer.js
+106 silly gunzTarPerm extractEntry scss/_popover.scss
+107 silly gunzTarPerm extractEntry scss/_alert.scss
+108 silly gunzTarPerm extractEntry scss/_breadcrumb.scss
+109 silly gunzTarPerm extractEntry scss/_button-group.scss
+110 silly gunzTarPerm extractEntry scss/_buttons.scss
+111 silly gunzTarPerm extractEntry scss/_card.scss
+112 silly gunzTarPerm extractEntry scss/_carousel.scss
+113 silly gunzTarPerm extractEntry scss/_close.scss
+114 silly gunzTarPerm extractEntry scss/_containers.scss
+115 silly gunzTarPerm extractEntry scss/_dropdown.scss
+116 silly gunzTarPerm extractEntry scss/_forms.scss
+117 silly gunzTarPerm extractEntry scss/_functions.scss
+118 silly gunzTarPerm extractEntry scss/_grid.scss
+119 silly gunzTarPerm extractEntry scss/_helpers.scss
+120 silly gunzTarPerm extractEntry scss/_images.scss
+121 silly gunzTarPerm extractEntry scss/_list-group.scss
+122 silly gunzTarPerm extractEntry scss/_mixins.scss
+123 silly gunzTarPerm extractEntry scss/_modal.scss
+124 silly gunzTarPerm extractEntry scss/_nav.scss
+125 silly gunzTarPerm extractEntry scss/_navbar.scss
+126 silly gunzTarPerm extractEntry scss/_pagination.scss
+127 silly gunzTarPerm extractEntry scss/_badge.scss
+128 silly gunzTarPerm extractEntry scss/_progress.scss
+129 silly gunzTarPerm extractEntry scss/_reboot.scss
+130 silly gunzTarPerm extractEntry scss/_root.scss
+131 silly gunzTarPerm extractEntry scss/_spinners.scss
+132 silly gunzTarPerm extractEntry scss/_tables.scss
+133 silly gunzTarPerm extractEntry scss/_toasts.scss
+134 silly gunzTarPerm extractEntry scss/_tooltip.scss
+135 silly gunzTarPerm extractEntry scss/_transitions.scss
+136 silly gunzTarPerm extractEntry scss/_type.scss
+137 silly gunzTarPerm extractEntry scss/_utilities.scss
+138 silly gunzTarPerm extractEntry scss/_variables.scss
+139 silly gunzTarPerm extractEntry scss/bootstrap-grid.scss
+140 silly gunzTarPerm extractEntry scss/bootstrap-reboot.scss
+141 silly gunzTarPerm extractEntry scss/bootstrap-utilities.scss
+142 silly gunzTarPerm extractEntry scss/bootstrap.scss
+143 silly gunzTarPerm extractEntry scss/forms/_floating-labels.scss
+144 silly gunzTarPerm extractEntry scss/forms/_form-check.scss
+145 silly gunzTarPerm extractEntry scss/forms/_form-control.scss
+146 silly gunzTarPerm extractEntry scss/forms/_form-range.scss
+147 silly gunzTarPerm extractEntry scss/forms/_form-select.scss
+148 silly gunzTarPerm extractEntry scss/forms/_form-text.scss
+149 silly gunzTarPerm extractEntry scss/forms/_input-group.scss
+150 silly gunzTarPerm extractEntry scss/forms/_labels.scss
+151 silly gunzTarPerm extractEntry scss/forms/_validation.scss
+152 silly gunzTarPerm extractEntry scss/helpers/_clearfix.scss
+153 silly gunzTarPerm extractEntry scss/helpers/_colored-links.scss
+154 silly gunzTarPerm extractEntry scss/helpers/_position.scss
+155 silly gunzTarPerm extractEntry scss/helpers/_ratio.scss
+156 silly gunzTarPerm extractEntry scss/helpers/_stretched-link.scss
+157 silly gunzTarPerm extractEntry scss/helpers/_text-truncation.scss
+158 silly gunzTarPerm extractEntry scss/helpers/_visually-hidden.scss
+159 silly gunzTarPerm extractEntry scss/mixins/_grid.scss
+160 silly gunzTarPerm extractEntry scss/mixins/_alert.scss
+161 silly gunzTarPerm extractEntry scss/mixins/_box-shadow.scss
+162 silly gunzTarPerm extractEntry scss/mixins/_breakpoints.scss
+163 silly gunzTarPerm extractEntry scss/mixins/_buttons.scss
+164 silly gunzTarPerm extractEntry scss/mixins/_caret.scss
+165 silly gunzTarPerm extractEntry scss/mixins/_clearfix.scss
+166 silly gunzTarPerm extractEntry scss/mixins/_container.scss
+167 silly gunzTarPerm extractEntry scss/mixins/_deprecate.scss
+168 silly gunzTarPerm extractEntry scss/mixins/_forms.scss
+169 silly gunzTarPerm extractEntry scss/mixins/_gradients.scss
+170 silly gunzTarPerm extractEntry scss/mixins/_border-radius.scss
+171 silly gunzTarPerm extractEntry scss/mixins/_image.scss
+172 silly gunzTarPerm extractEntry scss/mixins/_list-group.scss
+173 silly gunzTarPerm extractEntry scss/mixins/_lists.scss
+174 silly gunzTarPerm extractEntry scss/mixins/_pagination.scss
+175 silly gunzTarPerm extractEntry scss/mixins/_reset-text.scss
+176 silly gunzTarPerm extractEntry scss/mixins/_resize.scss
+177 silly gunzTarPerm extractEntry scss/mixins/_table-variants.scss
+178 silly gunzTarPerm extractEntry scss/mixins/_text-truncate.scss
+179 silly gunzTarPerm extractEntry scss/mixins/_transition.scss
+180 silly gunzTarPerm extractEntry scss/mixins/_utilities.scss
+181 silly gunzTarPerm extractEntry scss/mixins/_visually-hidden.scss
+182 silly gunzTarPerm extractEntry scss/utilities/_api.scss
+183 silly gunzTarPerm extractEntry scss/vendor/_rfs.scss
+184 silly lockFile cf215af8-3070-0-26708014076575637-package tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/package
+185 silly lockFile cf215af8-3070-0-26708014076575637-package tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/package
+186 silly lockFile 22bf7164-3070-0-26708014076575637-tmp-tgz tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/tmp.tgz
+187 silly lockFile 22bf7164-3070-0-26708014076575637-tmp-tgz tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/tmp.tgz
+188 verbose tar pack [ '/root/.npm/bootstrap/5.0.0-alpha2/package.tgz',
+188 verbose tar pack   '/root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/package' ]
+189 verbose tarball /root/.npm/bootstrap/5.0.0-alpha2/package.tgz
+190 verbose folder /root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/package
+191 silly lockFile cf215af8-3070-0-26708014076575637-package tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/package
+192 verbose lock tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/package /root/.npm/cf215af8-3070-0-26708014076575637-package.lock
+193 silly lockFile 34acf77e-otstrap-5-0-0-alpha2-package-tgz tar:///root/.npm/bootstrap/5.0.0-alpha2/package.tgz
+194 verbose lock tar:///root/.npm/bootstrap/5.0.0-alpha2/package.tgz /root/.npm/34acf77e-otstrap-5-0-0-alpha2-package-tgz.lock
+195 silly lockFile cf215af8-3070-0-26708014076575637-package tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/package
+196 silly lockFile cf215af8-3070-0-26708014076575637-package tar:///root/tmp/npm-7952-AFmXBwWf/1603918173070-0.26708014076575637/package
+197 silly lockFile 34acf77e-otstrap-5-0-0-alpha2-package-tgz tar:///root/.npm/bootstrap/5.0.0-alpha2/package.tgz
+198 silly lockFile 34acf77e-otstrap-5-0-0-alpha2-package-tgz tar:///root/.npm/bootstrap/5.0.0-alpha2/package.tgz
+199 silly lockFile 3f1d5f71-m-bootstrap-5-0-0-alpha2-package /root/.npm/bootstrap/5.0.0-alpha2/package
+200 verbose lock /root/.npm/bootstrap/5.0.0-alpha2/package /root/.npm/3f1d5f71-m-bootstrap-5-0-0-alpha2-package.lock
+201 silly lockFile 3f1d5f71-m-bootstrap-5-0-0-alpha2-package /root/.npm/bootstrap/5.0.0-alpha2/package
+202 silly lockFile 3f1d5f71-m-bootstrap-5-0-0-alpha2-package /root/.npm/bootstrap/5.0.0-alpha2/package
+203 verbose tar unpack /root/.npm/bootstrap/5.0.0-alpha2/package.tgz
+204 silly lockFile 24a694de-m-bootstrap-5-0-0-alpha2-package tar:///root/.npm/bootstrap/5.0.0-alpha2/package
+205 verbose lock tar:///root/.npm/bootstrap/5.0.0-alpha2/package /root/.npm/24a694de-m-bootstrap-5-0-0-alpha2-package.lock
+206 silly lockFile 34acf77e-otstrap-5-0-0-alpha2-package-tgz tar:///root/.npm/bootstrap/5.0.0-alpha2/package.tgz
+207 verbose lock tar:///root/.npm/bootstrap/5.0.0-alpha2/package.tgz /root/.npm/34acf77e-otstrap-5-0-0-alpha2-package-tgz.lock
+208 silly gunzTarPerm modes [ '755', '644' ]
+209 silly gunzTarPerm extractEntry package.json
+210 silly gunzTarPerm extractEntry README.md
+211 silly gunzTarPerm extractEntry dist/css/bootstrap-utilities.css
+212 silly gunzTarPerm extractEntry dist/css/bootstrap-grid.css
+213 silly gunzTarPerm extractEntry dist/css/bootstrap-grid.min.css
+214 silly gunzTarPerm extractEntry dist/css/bootstrap-grid.min.css.map
+215 silly gunzTarPerm extractEntry dist/css/bootstrap-reboot.css
+216 silly gunzTarPerm extractEntry dist/css/bootstrap-reboot.css.map
+217 silly gunzTarPerm extractEntry dist/css/bootstrap-reboot.min.css
+218 silly gunzTarPerm extractEntry dist/css/bootstrap-reboot.min.css.map
+219 silly gunzTarPerm extractEntry dist/css/bootstrap-grid.css.map
+220 silly gunzTarPerm extractEntry dist/css/bootstrap-utilities.css.map
+221 silly gunzTarPerm extractEntry dist/css/bootstrap-utilities.min.css
+222 silly gunzTarPerm extractEntry dist/css/bootstrap-utilities.min.css.map
+223 silly gunzTarPerm extractEntry dist/css/bootstrap.css
+224 silly gunzTarPerm extractEntry dist/css/bootstrap.css.map
+225 silly gunzTarPerm extractEntry dist/css/bootstrap.min.css
+226 silly gunzTarPerm extractEntry dist/css/bootstrap.min.css.map
+227 silly gunzTarPerm extractEntry dist/js/bootstrap.bundle.js
+228 silly gunzTarPerm extractEntry dist/js/bootstrap.bundle.min.js
+229 silly gunzTarPerm extractEntry dist/js/bootstrap.min.js
+230 silly gunzTarPerm extractEntry dist/js/bootstrap.esm.js
+231 silly gunzTarPerm extractEntry dist/js/bootstrap.js
+232 silly gunzTarPerm extractEntry dist/js/bootstrap.esm.min.js
+233 silly gunzTarPerm extractEntry dist/js/bootstrap.bundle.js.map
+234 silly gunzTarPerm extractEntry dist/js/bootstrap.esm.min.js.map
+235 silly gunzTarPerm extractEntry dist/js/bootstrap.esm.js.map
+236 silly gunzTarPerm extractEntry dist/js/bootstrap.js.map
+237 silly gunzTarPerm extractEntry dist/js/bootstrap.bundle.min.js.map
+238 silly gunzTarPerm extractEntry dist/js/bootstrap.min.js.map
+239 silly gunzTarPerm extractEntry js/dist/alert.js
+240 silly gunzTarPerm extractEntry js/dist/button.js
+241 silly gunzTarPerm extractEntry js/dist/tooltip.js
+242 silly gunzTarPerm extractEntry js/dist/carousel.js
+243 silly gunzTarPerm extractEntry js/dist/toast.js
+244 silly gunzTarPerm extractEntry js/dist/collapse.js
+245 silly gunzTarPerm extractEntry js/dist/tab.js
+246 silly gunzTarPerm extractEntry js/dist/scrollspy.js
+247 silly gunzTarPerm extractEntry js/dist/dropdown.js
+248 silly gunzTarPerm extractEntry js/dist/popover.js
+249 silly gunzTarPerm extractEntry js/dist/modal.js
+250 silly gunzTarPerm extractEntry js/dist/collapse.js.map
+251 silly gunzTarPerm extractEntry js/dist/alert.js.map
+252 silly gunzTarPerm extractEntry js/dist/dropdown.js.map
+253 silly gunzTarPerm extractEntry js/dist/popover.js.map
+254 silly gunzTarPerm extractEntry js/dist/dom/data.js
+255 silly gunzTarPerm extractEntry js/dist/dom/event-handler.js
+256 silly gunzTarPerm extractEntry js/dist/dom/manipulator.js
+257 silly gunzTarPerm extractEntry js/dist/dom/polyfill.js
+258 silly gunzTarPerm extractEntry js/dist/dom/selector-engine.js
+259 silly gunzTarPerm extractEntry js/dist/dom/data.js.map
+260 silly gunzTarPerm extractEntry js/dist/dom/event-handler.js.map
+261 silly gunzTarPerm extractEntry js/dist/dom/manipulator.js.map
+262 silly gunzTarPerm extractEntry js/dist/dom/polyfill.js.map
+263 silly gunzTarPerm extractEntry js/dist/dom/selector-engine.js.map
+264 silly gunzTarPerm extractEntry js/dist/scrollspy.js.map
+265 silly gunzTarPerm extractEntry js/dist/modal.js.map
+266 silly gunzTarPerm extractEntry js/dist/tab.js.map
+267 silly gunzTarPerm extractEntry js/dist/carousel.js.map
+268 silly gunzTarPerm extractEntry js/dist/toast.js.map
+269 silly gunzTarPerm extractEntry js/dist/button.js.map
+270 silly gunzTarPerm extractEntry js/dist/tooltip.js.map
+271 silly gunzTarPerm extractEntry js/src/alert.js
+272 silly gunzTarPerm extractEntry js/src/carousel.js
+273 silly gunzTarPerm extractEntry js/src/collapse.js
+274 silly gunzTarPerm extractEntry js/src/tooltip.js
+275 silly gunzTarPerm extractEntry js/src/dropdown.js
+276 silly gunzTarPerm extractEntry js/src/button.js
+277 silly gunzTarPerm extractEntry js/src/popover.js
+278 silly gunzTarPerm extractEntry js/src/scrollspy.js
+279 silly gunzTarPerm extractEntry js/src/tab.js
+280 silly gunzTarPerm extractEntry js/src/toast.js
+281 silly gunzTarPerm extractEntry js/src/modal.js
+282 silly gunzTarPerm extractEntry js/src/dom/data.js
+283 silly gunzTarPerm extractEntry js/src/dom/event-handler.js
+284 silly gunzTarPerm extractEntry js/src/dom/manipulator.js
+285 silly gunzTarPerm extractEntry js/src/dom/polyfill.js
+286 silly gunzTarPerm extractEntry js/src/dom/selector-engine.js
+287 silly gunzTarPerm extractEntry js/src/util/index.js
+288 silly gunzTarPerm extractEntry js/src/util/sanitizer.js
+289 silly gunzTarPerm extractEntry scss/_popover.scss
+290 silly gunzTarPerm extractEntry scss/_alert.scss
+291 silly gunzTarPerm extractEntry scss/_breadcrumb.scss
+292 silly gunzTarPerm extractEntry scss/_button-group.scss
+293 silly gunzTarPerm extractEntry scss/_buttons.scss
+294 silly gunzTarPerm extractEntry scss/_card.scss
+295 silly gunzTarPerm extractEntry scss/_carousel.scss
+296 silly gunzTarPerm extractEntry scss/_close.scss
+297 silly gunzTarPerm extractEntry scss/_containers.scss
+298 silly gunzTarPerm extractEntry scss/_dropdown.scss
+299 silly gunzTarPerm extractEntry scss/_forms.scss
+300 silly gunzTarPerm extractEntry scss/_functions.scss
+301 silly gunzTarPerm extractEntry scss/_grid.scss
+302 silly gunzTarPerm extractEntry scss/_helpers.scss
+303 silly gunzTarPerm extractEntry scss/_images.scss
+304 silly gunzTarPerm extractEntry scss/_list-group.scss
+305 silly gunzTarPerm extractEntry scss/_mixins.scss
+306 silly gunzTarPerm extractEntry scss/_modal.scss
+307 silly gunzTarPerm extractEntry scss/_nav.scss
+308 silly gunzTarPerm extractEntry scss/_navbar.scss
+309 silly gunzTarPerm extractEntry scss/_pagination.scss
+310 silly gunzTarPerm extractEntry scss/_badge.scss
+311 silly gunzTarPerm extractEntry scss/_progress.scss
+312 silly gunzTarPerm extractEntry scss/_reboot.scss
+313 silly gunzTarPerm extractEntry scss/_root.scss
+314 silly gunzTarPerm extractEntry scss/_spinners.scss
+315 silly gunzTarPerm extractEntry scss/_tables.scss
+316 silly gunzTarPerm extractEntry scss/_toasts.scss
+317 silly gunzTarPerm extractEntry scss/_tooltip.scss
+318 silly gunzTarPerm extractEntry scss/_transitions.scss
+319 silly gunzTarPerm extractEntry scss/_type.scss
+320 silly gunzTarPerm extractEntry scss/_utilities.scss
+321 silly gunzTarPerm extractEntry scss/_variables.scss
+322 silly gunzTarPerm extractEntry scss/bootstrap-grid.scss
+323 silly gunzTarPerm extractEntry scss/bootstrap-reboot.scss
+324 silly gunzTarPerm extractEntry scss/bootstrap-utilities.scss
+325 silly gunzTarPerm extractEntry scss/bootstrap.scss
+326 silly gunzTarPerm extractEntry scss/forms/_floating-labels.scss
+327 silly gunzTarPerm extractEntry scss/forms/_form-check.scss
+328 silly gunzTarPerm extractEntry scss/forms/_form-control.scss
+329 silly gunzTarPerm extractEntry scss/forms/_form-range.scss
+330 silly gunzTarPerm extractEntry scss/forms/_form-select.scss
+331 silly gunzTarPerm extractEntry scss/forms/_form-text.scss
+332 silly gunzTarPerm extractEntry scss/forms/_input-group.scss
+333 silly gunzTarPerm extractEntry scss/forms/_labels.scss
+334 silly gunzTarPerm extractEntry scss/forms/_validation.scss
+335 silly gunzTarPerm extractEntry scss/helpers/_clearfix.scss
+336 silly gunzTarPerm extractEntry scss/helpers/_colored-links.scss
+337 silly gunzTarPerm extractEntry scss/helpers/_position.scss
+338 silly gunzTarPerm extractEntry scss/helpers/_ratio.scss
+339 silly gunzTarPerm extractEntry scss/helpers/_stretched-link.scss
+340 silly gunzTarPerm extractEntry scss/helpers/_text-truncation.scss
+341 silly gunzTarPerm extractEntry scss/helpers/_visually-hidden.scss
+342 silly gunzTarPerm extractEntry scss/mixins/_grid.scss
+343 silly gunzTarPerm extractEntry scss/mixins/_alert.scss
+344 silly gunzTarPerm extractEntry scss/mixins/_box-shadow.scss
+345 silly gunzTarPerm extractEntry scss/mixins/_breakpoints.scss
+346 silly gunzTarPerm extractEntry scss/mixins/_buttons.scss
+347 silly gunzTarPerm extractEntry scss/mixins/_caret.scss
+348 silly gunzTarPerm extractEntry scss/mixins/_clearfix.scss
+349 silly gunzTarPerm extractEntry scss/mixins/_container.scss
+350 silly gunzTarPerm extractEntry scss/mixins/_deprecate.scss
+351 silly gunzTarPerm extractEntry scss/mixins/_forms.scss
+352 silly gunzTarPerm extractEntry scss/mixins/_gradients.scss
+353 silly gunzTarPerm extractEntry scss/mixins/_border-radius.scss
+354 silly gunzTarPerm extractEntry scss/mixins/_image.scss
+355 silly gunzTarPerm extractEntry scss/mixins/_list-group.scss
+356 silly gunzTarPerm extractEntry scss/mixins/_lists.scss
+357 silly gunzTarPerm extractEntry scss/mixins/_pagination.scss
+358 silly gunzTarPerm extractEntry scss/mixins/_reset-text.scss
+359 silly gunzTarPerm extractEntry scss/mixins/_resize.scss
+360 silly gunzTarPerm extractEntry scss/mixins/_table-variants.scss
+361 silly gunzTarPerm extractEntry scss/mixins/_text-truncate.scss
+362 silly gunzTarPerm extractEntry scss/mixins/_transition.scss
+363 silly gunzTarPerm extractEntry scss/mixins/_utilities.scss
+364 silly gunzTarPerm extractEntry scss/mixins/_visually-hidden.scss
+365 silly gunzTarPerm extractEntry scss/utilities/_api.scss
+366 silly gunzTarPerm extractEntry scss/vendor/_rfs.scss
+367 silly lockFile 24a694de-m-bootstrap-5-0-0-alpha2-package tar:///root/.npm/bootstrap/5.0.0-alpha2/package
+368 silly lockFile 24a694de-m-bootstrap-5-0-0-alpha2-package tar:///root/.npm/bootstrap/5.0.0-alpha2/package
+369 silly lockFile 34acf77e-otstrap-5-0-0-alpha2-package-tgz tar:///root/.npm/bootstrap/5.0.0-alpha2/package.tgz
+370 silly lockFile 34acf77e-otstrap-5-0-0-alpha2-package-tgz tar:///root/.npm/bootstrap/5.0.0-alpha2/package.tgz
+371 verbose chmod /root/.npm/bootstrap/5.0.0-alpha2/package.tgz 644
+372 verbose chown /root/.npm/bootstrap/5.0.0-alpha2/package.tgz [ 0, 0 ]
+373 silly lockFile 3c71cc99-bootstrap bootstrap
+374 silly lockFile 3c71cc99-bootstrap bootstrap
+375 silly resolved [ { name: 'bootstrap',
+375 silly resolved     description: 'The most popular front-end framework for developing responsive, mobile first projects on the web.',
+375 silly resolved     version: '5.0.0-alpha2',
+375 silly resolved     version_short: '5.0',
+375 silly resolved     keywords:
+375 silly resolved      [ 'css',
+375 silly resolved        'sass',
+375 silly resolved        'mobile-first',
+375 silly resolved        'responsive',
+375 silly resolved        'front-end',
+375 silly resolved        'framework',
+375 silly resolved        'web' ],
+375 silly resolved     homepage: 'https://getbootstrap.com/',
+375 silly resolved     author:
+375 silly resolved      { name: 'The Bootstrap Authors',
+375 silly resolved        url: 'https://github.com/twbs/bootstrap/graphs/contributors' },
+375 silly resolved     contributors: [ [Object] ],
+375 silly resolved     scripts:
+375 silly resolved      { start: 'npm-run-all --parallel watch docs-serve',
+375 silly resolved        bundlewatch: 'bundlewatch --config .bundlewatch.config.json',
+375 silly resolved        css: 'npm-run-all css-compile css-prefix css-minify',
+375 silly resolved        'css-compile': 'node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/',
+375 silly resolved        'css-lint': 'npm-run-all --continue-on-error --parallel css-lint-*',
+375 silly resolved        'css-lint-stylelint': 'stylelint "**/*.{css,scss}" --cache --cache-location .cache/.stylelintcache',
+375 silly resolved        'css-lint-vars': 'fusv scss/ site/assets/scss/',
+375 silly resolved        'css-minify': 'cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/bootstrap.min.css dist/css/bootstrap.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/bootstrap-grid.min.css dist/css/bootstrap-grid.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/bootstrap-utilities.min.css dist/css/bootstrap-utilities.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/bootstrap-reboot.min.css dist/css/bootstrap-reboot.css',
+375 silly resolved        'css-prefix': 'npm-run-all --parallel css-prefix-*',
+375 silly resolved        'css-prefix-main': 'postcss --config build/postcss.config.js --replace "dist/css/*.css" "!dist/css/*.min.css"',
+375 silly resolved        'css-prefix-examples': 'postcss --config build/postcss.config.js --replace "site/content/**/*.css"',
+375 silly resolved        js: 'npm-run-all js-compile js-minify',
+375 silly resolved        'js-compile': 'npm-run-all --parallel js-compile-*',
+375 silly resolved        'js-compile-standalone': 'rollup --environment BUNDLE:false --config build/rollup.config.js --sourcemap',
+375 silly resolved        'js-compile-standalone-esm': 'rollup --environment ESM:true,BUNDLE:false --config build/rollup.config.js --sourcemap',
+375 silly resolved        'js-compile-bundle': 'rollup --environment BUNDLE:true --config build/rollup.config.js --sourcemap',
+375 silly resolved        'js-compile-plugins': 'node build/build-plugins.js',
+375 silly resolved        'js-lint': 'eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives .',
+375 silly resolved        'js-minify': 'npm-run-all --parallel js-minify-*',
+375 silly resolved        'js-minify-standalone': 'terser --compress --mangle --comments "/^!/" --source-map "content=dist/js/bootstrap.js.map,includeSources,url=bootstrap.min.js.map" --output dist/js/bootstrap.min.js dist/js/bootstrap.js',
+375 silly resolved        'js-minify-standalone-esm': 'terser --compress --mangle --comments "/^!/" --source-map "content=dist/js/bootstrap.esm.js.map,includeSources,url=bootstrap.esm.min.js.map" --output dist/js/bootstrap.esm.min.js dist/js/bootstrap.esm.js',
+375 silly resolved        'js-minify-bundle': 'terser --compress --mangle --comments "/^!/" --source-map "content=dist/js/bootstrap.bundle.js.map,includeSources,url=bootstrap.bundle.min.js.map" --output dist/js/bootstrap.bundle.min.js dist/js/bootstrap.bundle.js',
+375 silly resolved        'js-test': 'npm-run-all --parallel js-test-karma js-test-jquery js-test-integration',
+375 silly resolved        'js-debug': 'cross-env DEBUG=true npm run js-test-karma',
+375 silly resolved        'js-test-karma': 'karma start js/tests/karma.conf.js',
+375 silly resolved        'js-test-integration': 'rollup --config js/tests/integration/rollup.bundle.js && rollup --config js/tests/integration/rollup.bundle-modularity.js',
+375 silly resolved        'js-test-cloud': 'cross-env BROWSER=true npm run js-test-karma',
+375 silly resolved        'js-test-jquery': 'cross-env JQUERY=true npm run js-test-karma',
+375 silly resolved        lint: 'npm-run-all --parallel js-lint css-lint lockfile-lint',
+375 silly resolved        docs: 'npm-run-all docs-build docs-lint',
+375 silly resolved        'docs-build': 'hugo --cleanDestinationDir',
+375 silly resolved        'docs-compile': 'npm run docs-build',
+375 silly resolved        'docs-linkinator': 'linkinator _gh_pages --recurse --silent --skip "^(?!http://localhost)"',
+375 silly resolved        'docs-vnu': 'node build/vnu-jar.js',
+375 silly resolved        'docs-lint': 'npm-run-all --parallel docs-vnu docs-linkinator',
+375 silly resolved        'docs-serve': 'hugo server --port 9001 --disableFastRender',
+375 silly resolved        'docs-serve-only': 'sirv _gh_pages --port 9001',
+375 silly resolved        'lockfile-lint': 'lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json',
+375 silly resolved        'update-deps': 'ncu -u -x karma-browserstack-launcher,terser && npm update && echo Manually update site/assets/js/vendor',
+375 silly resolved        release: 'npm-run-all dist release-sri docs-build release-zip*',
+375 silly resolved        'release-sri': 'node build/generate-sri.js',
+375 silly resolved        'release-version': 'node build/change-version.js',
+375 silly resolved        'release-zip': 'cross-env-shell "rm -rf bootstrap-$npm_package_version-dist && cp -r dist/ bootstrap-$npm_package_version-dist && zip -r9 bootstrap-$npm_package_version-dist.zip bootstrap-$npm_package_version-dist && rm -rf bootstrap-$npm_package_version-dist"',
+375 silly resolved        'release-zip-examples': 'node build/zip-examples.js',
+375 silly resolved        dist: 'npm-run-all --parallel css js',
+375 silly resolved        test: 'npm-run-all lint dist js-test docs-build docs-lint',
+375 silly resolved        netlify: 'cross-env-shell HUGO_BASEURL=$DEPLOY_PRIME_URL npm-run-all dist release-sri docs-build',
+375 silly resolved        watch: 'npm-run-all --parallel watch-*',
+375 silly resolved        'watch-css-main': 'nodemon --watch scss/ --ext scss --exec "npm-run-all css-lint css-compile css-prefix"',
+375 silly resolved        'watch-css-docs': 'nodemon --watch site/assets/scss/ --ext scss --exec "npm run css-lint"',
+375 silly resolved        'watch-js-main': 'nodemon --watch js/src/ --ext js --exec "npm-run-all js-lint js-compile"',
+375 silly resolved        'watch-js-docs': 'nodemon --watch site/assets/js/ --ext js --exec "npm run js-lint"' },
+375 silly resolved     style: 'dist/css/bootstrap.css',
+375 silly resolved     sass: 'scss/bootstrap.scss',
+375 silly resolved     main: 'dist/js/bootstrap.js',
+375 silly resolved     module: 'dist/js/bootstrap.esm.js',
+375 silly resolved     repository:
+375 silly resolved      { type: 'git',
+375 silly resolved        url: 'git+https://github.com/twbs/bootstrap.git' },
+375 silly resolved     bugs: { url: 'https://github.com/twbs/bootstrap/issues' },
+375 silly resolved     license: 'MIT',
+375 silly resolved     funding:
+375 silly resolved      { type: 'opencollective',
+375 silly resolved        url: 'https://opencollective.com/bootstrap' },
+375 silly resolved     dependencies: {},
+375 silly resolved     peerDependencies: { 'popper.js': '^1.16.1' },
+375 silly resolved     devDependencies:
+375 silly resolved      { '@babel/cli': '^7.12.1',
+375 silly resolved        '@babel/core': '^7.12.3',
+375 silly resolved        '@babel/preset-env': '^7.12.1',
+375 silly resolved        '@rollup/plugin-babel': '^5.2.1',
+375 silly resolved        '@rollup/plugin-commonjs': '^16.0.0',
+375 silly resolved        '@rollup/plugin-node-resolve': '^10.0.0',
+375 silly resolved        autoprefixer: '^9.8.6',
+375 silly resolved        bundlewatch: '^0.3.1',
+375 silly resolved        'clean-css-cli': '^4.3.0',
+375 silly resolved        'cross-env': '^7.0.2',
+375 silly resolved        eslint: '^7.12.1',
+375 silly resolved        'eslint-config-xo': '^0.33.1',
+375 silly resolved        'eslint-plugin-import': '^2.22.1',
+375 silly resolved        'eslint-plugin-unicorn': '^23.0.0',
+375 silly resolved        'find-unused-sass-variables': '^2.0.0',
+375 silly resolved        glob: '^7.1.6',
+375 silly resolved        'hammer-simulator': '0.0.1',
+375 silly resolved        'hugo-bin': '^0.64.5',
+375 silly resolved        ip: '^1.1.5',
+375 silly resolved        jquery: '^3.5.1',
+375 silly resolved        karma: '^5.2.3',
+375 silly resolved        'karma-browserstack-launcher': '1.4.0',
+375 silly resolved        'karma-chrome-launcher': '^3.1.0',
+375 silly resolved        'karma-coverage-istanbul-reporter': '^3.0.3',
+375 silly resolved        'karma-detect-browsers': '^2.3.3',
+375 silly resolved        'karma-firefox-launcher': '^2.0.0',
+375 silly resolved        'karma-jasmine': '^4.0.1',
+375 silly resolved        'karma-jasmine-html-reporter': '^1.5.4',
+375 silly resolved        'karma-rollup-preprocessor': '^7.0.5',
+375 silly resolved        linkinator: '^2.2.0',
+375 silly resolved        'lockfile-lint': '^4.3.7',
+375 silly resolved        'node-sass': '^4.14.1',
+375 silly resolved        nodemon: '^2.0.6',
+375 silly resolved        'npm-run-all': '^4.1.5',
+375 silly resolved        'popper.js': '^1.16.1',
+375 silly resolved        'postcss-cli': '^7.1.2',
+375 silly resolved        rollup: '^2.32.1',
+375 silly resolved        'rollup-plugin-istanbul': '^2.0.1',
+375 silly resolved        shelljs: '^0.8.4',
+375 silly resolved        'sirv-cli': '^1.0.8',
+375 silly resolved        stylelint: '^13.7.2',
+375 silly resolved        'stylelint-config-twbs-bootstrap': '^2.1.0',
+375 silly resolved        terser: '5.1.0',
+375 silly resolved        'vnu-jar': '20.6.30' },
+375 silly resolved     files:
+375 silly resolved      [ 'dist/{css,js}/*.{css,js,map}',
+375 silly resolved        'js/{src,dist}/**/*.{js,map}',
+375 silly resolved        'scss/**/*.scss' ],
+375 silly resolved     'hugo-bin': { buildTags: 'extended' },
+375 silly resolved     jspm:
+375 silly resolved      { registry: 'npm',
+375 silly resolved        main: 'js/bootstrap',
+375 silly resolved        directories: [Object],
+375 silly resolved        shim: [Object],
+375 silly resolved        dependencies: {},
+375 silly resolved        peerDependencies: [Object] },
+375 silly resolved     readme: '<p align="center">\n  <a href="https://v5.getbootstrap.com/">\n    <img src="https://v5.getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="200" height="165">\n  </a>\n</p>\n\n<h3 align="center">Bootstrap</h3>\n\n<p align="center">\n  Sleek, intuitive, and powerful front-end framework for faster and easier web development.\n  <br>\n  <a href="https://v5.getbootstrap.com/docs/5.0/"><strong>Explore Bootstrap docs »</strong></a>\n  <br>\n  <br>\n  <a href="https://github.com/twbs/bootstrap/issues/new?template=bug_report.md">Report bug</a>\n  ·\n  <a href="https://github.com/twbs/bootstrap/issues/new?template=feature_request.md">Request feature</a>\n  ·\n  <a href="https://themes.getbootstrap.com/">Themes</a>\n  ·\n  <a href="https://blog.getbootstrap.com/">Blog</a>\n</p>\n\n\n## Bootstrap 4\n\nOur default branch is for development of our upcoming Bootstrap 5 release. Head to the [`v4-dev` branch](https://github.com/twbs/bootstrap/tree/v4-dev) to view the readme, documentation, and source code for Bootstrap 4.\n\n\n## Table of contents\n\n- [Quick start](#quick-start)\n- [Status](#status)\n- [What\'s included](#whats-included)\n- [Bugs and feature requests](#bugs-and-feature-requests)\n- [Documentation](#documentation)\n- [Contributing](#contributing)\n- [Community](#community)\n- [Versioning](#versioning)\n- [Creators](#creators)\n- [Thanks](#thanks)\n- [Copyright and license](#copyright-and-license)\n\n\n## Quick start\n\nSeveral quick start options are available:\n\n- [Download the latest release](https://github.com/twbs/bootstrap/archive/v5.0.0-alpha2.zip)\n- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`\n- Install with [npm](https://www.npmjs.com/): `npm install bootstrap@next`\n- Install with [yarn](https://yarnpkg.com/): `yarn add bootstrap@next`\n- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap:5.0.0-alpha2`\n- Install with [NuGet](https://www.nuget.org/): CSS: `Install-Package bootstrap` Sass: `Install-Package bootstrap.sass`\n\nRead the [Getting started page](https://v5.getbootstrap.com/docs/5.0/getting-started/introduction/) for information on the framework contents, templates and examples, and more.\n\n\n## Status\n\n[![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com/)\n[![Build Status](https://github.com/twbs/bootstrap/workflows/JS%20Tests/badge.svg?branch=main)](https://github.com/twbs/bootstrap/actions?query=workflow%3AJS+Tests+branch%3Amain)\n[![npm version](https://img.shields.io/npm/v/bootstrap)](https://www.npmjs.com/package/bootstrap)\n[![Gem version](https://img.shields.io/gem/v/bootstrap)](https://rubygems.org/gems/bootstrap)\n[![Meteor Atmosphere](https://img.shields.io/badge/meteor-twbs%3Abootstrap-blue)](https://atmospherejs.com/twbs/bootstrap)\n[![Packagist Prerelease](https://img.shields.io/packagist/vpre/twbs/bootstrap)](https://packagist.org/packages/twbs/bootstrap)\n[![NuGet](https://img.shields.io/nuget/vpre/bootstrap)](https://www.nuget.org/packages/bootstrap/absoluteLatest)\n[![peerDependencies Status](https://img.shields.io/david/peer/twbs/bootstrap)](https://david-dm.org/twbs/bootstrap?type=peer)\n[![devDependency Status](https://img.shields.io/david/dev/twbs/bootstrap)](https://david-dm.org/twbs/bootstrap?type=dev)\n[![Coverage Status](https://img.shields.io/coveralls/github/twbs/bootstrap/main)](https://coveralls.io/github/twbs/bootstrap?branch=main)\n[![CSS gzip size](https://img.badgesize.io/twbs/bootstrap/main/dist/css/bootstrap.min.css?compression=gzip&label=CSS%20gzip%20size)](https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap.min.css)\n[![CSS Brotli size](https://img.badgesize.io/twbs/bootstrap/main/dist/css/bootstrap.min.css?compression=brotli&label=CSS%20Brotli%20size)](https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap.min.css)\n[![JS gzip size](https://img.badgesize.io/twbs/bootstrap/main/dist/js/bootstrap.min.js?compression=gzip&label=JS%20gzip%20size)](https://github.com/twbs/bootstrap/blob/main/dist/js/bootstrap.min.js)\n[![JS Brotli size](https://img.badgesize.io/twbs/bootstrap/main/dist/js/bootstrap.min.js?compression=brotli&label=JS%20Brotli%20size)](https://github.com/twbs/bootstrap/blob/main/dist/js/bootstrap.min.js)\n[![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=SkxZcStBeExEdVJqQ2hWYnlWckpkNmNEY213SFp6WHFETWk2bGFuY3pCbz0tLXhqbHJsVlZhQnRBdEpod3NLSDMzaHc9PQ==--3d0b75245708616eb93113221beece33e680b229)](https://www.browserstack.com/automate/public-build/SkxZcStBeExEdVJqQ2hWYnlWckpkNmNEY213SFp6WHFETWk2bGFuY3pCbz0tLXhqbHJsVlZhQnRBdEpod3NLSDMzaHc9PQ==--3d0b75245708616eb93113221beece33e680b229)\n[![Backers on Open Collective](https://img.shields.io/opencollective/backers/bootstrap)](#backers)\n[![Sponsors on Open Collective](https://img.shields.io/opencollective/sponsors/bootstrap)](#sponsors)\n\n\n## What\'s included\n\nWithin the download you\'ll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You\'ll see something like this:\n\n```text\nbootstrap/\n└── dist/\n    ├── css/\n    │   ├── bootstrap-grid.css\n    │   ├── bootstrap-grid.css.map\n    │   ├── bootstrap-grid.min.css\n    │   ├── bootstrap-grid.min.css.map\n    │   ├── bootstrap-reboot.css\n    │   ├── bootstrap-reboot.css.map\n    │   ├── bootstrap-reboot.min.css\n    │   ├── bootstrap-reboot.min.css.map\n    │   ├── bootstrap-utilities.css\n    │   ├── bootstrap-utilities.css.map\n    │   ├── bootstrap-utilities.min.css\n    │   ├── bootstrap-utilities.min.css.map\n    │   ├── bootstrap.css\n    │   ├── bootstrap.css.map\n    │   ├── bootstrap.min.css\n    │   └── bootstrap.min.css.map\n    └── js/\n        ├── bootstrap.bundle.js\n        ├── bootstrap.bundle.js.map\n        ├── bootstrap.bundle.min.js\n        ├── bootstrap.bundle.min.js.map\n        ├── bootstrap.esm.js\n        ├── bootstrap.esm.js.map\n        ├── bootstrap.esm.min.js\n        ├── bootstrap.esm.min.js.map\n        ├── bootstrap.js\n        ├── bootstrap.js.map\n        ├── bootstrap.min.js\n        └── bootstrap.min.js.map\n```\n\nWe provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). [source maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`bootstrap.*.map`) are available for use with certain browsers\' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/).\n\n\n## Bugs and feature requests\n\nHave a bug or a feature request? Please first read the [issue guidelines](https://github.com/twbs/bootstrap/blob/main/.github/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).\n\n\n## Documentation\n\nBootstrap\'s documentation, included in this repo in the root directory, is built with [Hugo](https://gohugo.io/) and publicly hosted on GitHub Pages at <https://v5.getbootstrap.com/>. The docs may also be run locally.\n\nDocumentation search is powered by [Algolia\'s DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in `site/assets/js/src/search.js` file.\n\n### Running documentation locally\n\n1. Run `npm install` to install the Node.js dependencies, including Hugo (the site builder).\n2. Run `npm run test` (or a specific npm script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.\n3. From the root `/bootstrap` directory, run `npm run docs-serve` in the command line.\n4. Open `http://localhost:9001/` in your browser, and voilà.\n\nLearn more about using Hugo by reading its [documentation](https://gohugo.io/documentation/).\n\n### Documentation for previous releases\n\nYou can find all our previous releases docs on <https://v5.getbootstrap.com/docs/versions/>.\n\n[Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.\n\n\n## Contributing\n\nPlease read through our [contributing guidelines](https://github.com/twbs/bootstrap/blob/main/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.\n\nMoreover, if your pull request contains JavaScript patches or features, you must include [relevant unit tests](https://github.com/twbs/bootstrap/tree/main/js/tests). All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).\n\nEditor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/main/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.\n\n\n## Community\n\nGet updates on Bootstrap\'s development and chat with the project maintainers and community members.\n\n- Follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap).\n- Read and subscribe to [The Official Bootstrap Blog](https://blog.getbootstrap.com/).\n- Join [the official Slack room](https://bootstrap-slack.herokuapp.com/).\n- Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, in the `##bootstrap` channel.\n- Implementation help may be found at Stack Overflow (tagged [`bootstrap-5`](https://stackoverflow.com/questions/tagged/bootstrap-5)).\n- Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/browse/keyword/bootstrap) or similar delivery mechanisms for maximum discoverability.\n\n\n## Versioning\n\nFor transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under [the Semantic Versioning guidelines](https://semver.org/). Sometimes we screw up, but we adhere to those rules whenever possible.\n\nSee [the Releases section of our GitHub project](https://github.com/twbs/bootstrap/releases) for changelogs for each release version of Bootstrap. Release announcement posts on [the official Bootstrap blog](https://blog.getbootstrap.com/) contain summaries of the most noteworthy changes made in each release.\n\n\n## Creators\n\n**Mark Otto**\n\n- <https://twitter.com/mdo>\n- <https://github.com/mdo>\n\n**Jacob Thornton**\n\n- <https://twitter.com/fat>\n- <https://github.com/fat>\n\n\n## Thanks\n\n<a href="https://www.browserstack.com/">\n  <img src="https://live.browserstack.com/images/opensource/browserstack-logo.svg" alt="BrowserStack Logo" width="192" height="42">\n</a>\n\nThanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers!\n\n\n## Sponsors\n\nSupport this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/bootstrap#sponsor)]\n\n[![OC sponsor 0](https://opencollective.com/bootstrap/sponsor/0/avatar.svg)](https://opencollective.com/bootstrap/sponsor/0/website)\n[![OC sponsor 1](https://opencollective.com/bootstrap/sponsor/1/avatar.svg)](https://opencollective.com/bootstrap/sponsor/1/website)\n[![OC sponsor 2](https://opencollective.com/bootstrap/sponsor/2/avatar.svg)](https://opencollective.com/bootstrap/sponsor/2/website)\n[![OC sponsor 3](https://opencollective.com/bootstrap/sponsor/3/avatar.svg)](https://opencollective.com/bootstrap/sponsor/3/website)\n[![OC sponsor 4](https://opencollective.com/bootstrap/sponsor/4/avatar.svg)](https://opencollective.com/bootstrap/sponsor/4/website)\n[![OC sponsor 5](https://opencollective.com/bootstrap/sponsor/5/avatar.svg)](https://opencollective.com/bootstrap/sponsor/5/website)\n[![OC sponsor 6](https://opencollective.com/bootstrap/sponsor/6/avatar.svg)](https://opencollective.com/bootstrap/sponsor/6/website)\n[![OC sponsor 7](https://opencollective.com/bootstrap/sponsor/7/avatar.svg)](https://opencollective.com/bootstrap/sponsor/7/website)\n[![OC sponsor 8](https://opencollective.com/bootstrap/sponsor/8/avatar.svg)](https://opencollective.com/bootstrap/sponsor/8/website)\n[![OC sponsor 9](https://opencollective.com/bootstrap/sponsor/9/avatar.svg)](https://opencollective.com/bootstrap/sponsor/9/website)\n\n\n## Backers\n\nThank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/bootstrap#backer)]\n\n[![Backers](https://opencollective.com/bootstrap/backers.svg?width=890)](https://opencollective.com/bootstrap#backers)\n\n\n## Copyright and license\n\nCode and documentation copyright 2011–2020 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors) and [Twitter, Inc.](https://twitter.com) Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).\n',
+375 silly resolved     readmeFilename: 'README.md',
+375 silly resolved     _id: 'bootstrap@5.0.0-alpha2',
+375 silly resolved     dist: { shasum: '24a718ac5d90459fdf0269d74cd4791865af5ee8' },
+375 silly resolved     _from: 'bootstrap' } ]
+376 info install bootstrap@5.0.0-alpha2 into /opt/lampp/htdocs/ecommerce/assets/scss
+377 info installOne bootstrap@5.0.0-alpha2
+378 info /opt/lampp/htdocs/ecommerce/assets/scss/node_modules/bootstrap unbuild
+379 verbose tar unpack /root/.npm/bootstrap/5.0.0-alpha2/package.tgz
+380 silly lockFile 6078ca2c-sets-scss-node-modules-bootstrap tar:///opt/lampp/htdocs/ecommerce/assets/scss/node_modules/bootstrap
+381 verbose lock tar:///opt/lampp/htdocs/ecommerce/assets/scss/node_modules/bootstrap /root/.npm/6078ca2c-sets-scss-node-modules-bootstrap.lock
+382 silly lockFile 34acf77e-otstrap-5-0-0-alpha2-package-tgz tar:///root/.npm/bootstrap/5.0.0-alpha2/package.tgz
+383 verbose lock tar:///root/.npm/bootstrap/5.0.0-alpha2/package.tgz /root/.npm/34acf77e-otstrap-5-0-0-alpha2-package-tgz.lock
+384 silly gunzTarPerm modes [ '755', '644' ]
+385 silly gunzTarPerm extractEntry package.json
+386 silly gunzTarPerm extractEntry README.md
+387 silly gunzTarPerm extractEntry dist/css/bootstrap-utilities.css
+388 silly gunzTarPerm extractEntry dist/css/bootstrap-grid.css
+389 silly gunzTarPerm extractEntry dist/css/bootstrap-grid.min.css
+390 silly gunzTarPerm extractEntry dist/css/bootstrap-grid.min.css.map
+391 silly gunzTarPerm extractEntry dist/css/bootstrap-reboot.css
+392 silly gunzTarPerm extractEntry dist/css/bootstrap-reboot.css.map
+393 silly gunzTarPerm extractEntry dist/css/bootstrap-reboot.min.css
+394 silly gunzTarPerm extractEntry dist/css/bootstrap-reboot.min.css.map
+395 silly gunzTarPerm extractEntry dist/css/bootstrap-grid.css.map
+396 silly gunzTarPerm extractEntry dist/css/bootstrap-utilities.css.map
+397 silly gunzTarPerm extractEntry dist/css/bootstrap-utilities.min.css
+398 silly gunzTarPerm extractEntry dist/css/bootstrap-utilities.min.css.map
+399 silly gunzTarPerm extractEntry dist/css/bootstrap.css
+400 silly gunzTarPerm extractEntry dist/css/bootstrap.css.map
+401 silly gunzTarPerm extractEntry dist/css/bootstrap.min.css
+402 silly gunzTarPerm extractEntry dist/css/bootstrap.min.css.map
+403 silly gunzTarPerm extractEntry dist/js/bootstrap.bundle.js
+404 silly gunzTarPerm extractEntry dist/js/bootstrap.bundle.min.js
+405 silly gunzTarPerm extractEntry dist/js/bootstrap.min.js
+406 silly gunzTarPerm extractEntry dist/js/bootstrap.esm.js
+407 silly gunzTarPerm extractEntry dist/js/bootstrap.js
+408 silly gunzTarPerm extractEntry dist/js/bootstrap.esm.min.js
+409 silly gunzTarPerm extractEntry dist/js/bootstrap.bundle.js.map
+410 silly gunzTarPerm extractEntry dist/js/bootstrap.esm.min.js.map
+411 silly gunzTarPerm extractEntry dist/js/bootstrap.esm.js.map
+412 silly gunzTarPerm extractEntry dist/js/bootstrap.js.map
+413 silly gunzTarPerm extractEntry dist/js/bootstrap.bundle.min.js.map
+414 silly gunzTarPerm extractEntry dist/js/bootstrap.min.js.map
+415 silly gunzTarPerm extractEntry js/dist/alert.js
+416 silly gunzTarPerm extractEntry js/dist/button.js
+417 silly gunzTarPerm extractEntry js/dist/tooltip.js
+418 silly gunzTarPerm extractEntry js/dist/carousel.js
+419 silly gunzTarPerm extractEntry js/dist/toast.js
+420 silly gunzTarPerm extractEntry js/dist/collapse.js
+421 silly gunzTarPerm extractEntry js/dist/tab.js
+422 silly gunzTarPerm extractEntry js/dist/scrollspy.js
+423 silly gunzTarPerm extractEntry js/dist/dropdown.js
+424 silly gunzTarPerm extractEntry js/dist/popover.js
+425 silly gunzTarPerm extractEntry js/dist/modal.js
+426 silly gunzTarPerm extractEntry js/dist/collapse.js.map
+427 silly gunzTarPerm extractEntry js/dist/alert.js.map
+428 silly gunzTarPerm extractEntry js/dist/dropdown.js.map
+429 silly gunzTarPerm extractEntry js/dist/popover.js.map
+430 silly gunzTarPerm extractEntry js/dist/dom/data.js
+431 silly gunzTarPerm extractEntry js/dist/dom/event-handler.js
+432 silly gunzTarPerm extractEntry js/dist/dom/manipulator.js
+433 silly gunzTarPerm extractEntry js/dist/dom/polyfill.js
+434 silly gunzTarPerm extractEntry js/dist/dom/selector-engine.js
+435 silly gunzTarPerm extractEntry js/dist/dom/data.js.map
+436 silly gunzTarPerm extractEntry js/dist/dom/event-handler.js.map
+437 silly gunzTarPerm extractEntry js/dist/dom/manipulator.js.map
+438 silly gunzTarPerm extractEntry js/dist/dom/polyfill.js.map
+439 silly gunzTarPerm extractEntry js/dist/dom/selector-engine.js.map
+440 silly gunzTarPerm extractEntry js/dist/scrollspy.js.map
+441 silly gunzTarPerm extractEntry js/dist/modal.js.map
+442 silly gunzTarPerm extractEntry js/dist/tab.js.map
+443 silly gunzTarPerm extractEntry js/dist/carousel.js.map
+444 silly gunzTarPerm extractEntry js/dist/toast.js.map
+445 silly gunzTarPerm extractEntry js/dist/button.js.map
+446 silly gunzTarPerm extractEntry js/dist/tooltip.js.map
+447 silly gunzTarPerm extractEntry js/src/alert.js
+448 silly gunzTarPerm extractEntry js/src/carousel.js
+449 silly gunzTarPerm extractEntry js/src/collapse.js
+450 silly gunzTarPerm extractEntry js/src/tooltip.js
+451 silly gunzTarPerm extractEntry js/src/dropdown.js
+452 silly gunzTarPerm extractEntry js/src/button.js
+453 silly gunzTarPerm extractEntry js/src/popover.js
+454 silly gunzTarPerm extractEntry js/src/scrollspy.js
+455 silly gunzTarPerm extractEntry js/src/tab.js
+456 silly gunzTarPerm extractEntry js/src/toast.js
+457 silly gunzTarPerm extractEntry js/src/modal.js
+458 silly gunzTarPerm extractEntry js/src/dom/data.js
+459 silly gunzTarPerm extractEntry js/src/dom/event-handler.js
+460 silly gunzTarPerm extractEntry js/src/dom/manipulator.js
+461 silly gunzTarPerm extractEntry js/src/dom/polyfill.js
+462 silly gunzTarPerm extractEntry js/src/dom/selector-engine.js
+463 silly gunzTarPerm extractEntry js/src/util/index.js
+464 silly gunzTarPerm extractEntry js/src/util/sanitizer.js
+465 silly gunzTarPerm extractEntry scss/_popover.scss
+466 silly gunzTarPerm extractEntry scss/_alert.scss
+467 silly gunzTarPerm extractEntry scss/_breadcrumb.scss
+468 silly gunzTarPerm extractEntry scss/_button-group.scss
+469 silly gunzTarPerm extractEntry scss/_buttons.scss
+470 silly gunzTarPerm extractEntry scss/_card.scss
+471 silly gunzTarPerm extractEntry scss/_carousel.scss
+472 silly gunzTarPerm extractEntry scss/_close.scss
+473 silly gunzTarPerm extractEntry scss/_containers.scss
+474 silly gunzTarPerm extractEntry scss/_dropdown.scss
+475 silly gunzTarPerm extractEntry scss/_forms.scss
+476 silly gunzTarPerm extractEntry scss/_functions.scss
+477 silly gunzTarPerm extractEntry scss/_grid.scss
+478 silly gunzTarPerm extractEntry scss/_helpers.scss
+479 silly gunzTarPerm extractEntry scss/_images.scss
+480 silly gunzTarPerm extractEntry scss/_list-group.scss
+481 silly gunzTarPerm extractEntry scss/_mixins.scss
+482 silly gunzTarPerm extractEntry scss/_modal.scss
+483 silly gunzTarPerm extractEntry scss/_nav.scss
+484 silly gunzTarPerm extractEntry scss/_navbar.scss
+485 silly gunzTarPerm extractEntry scss/_pagination.scss
+486 silly gunzTarPerm extractEntry scss/_badge.scss
+487 silly gunzTarPerm extractEntry scss/_progress.scss
+488 silly gunzTarPerm extractEntry scss/_reboot.scss
+489 silly gunzTarPerm extractEntry scss/_root.scss
+490 silly gunzTarPerm extractEntry scss/_spinners.scss
+491 silly gunzTarPerm extractEntry scss/_tables.scss
+492 silly gunzTarPerm extractEntry scss/_toasts.scss
+493 silly gunzTarPerm extractEntry scss/_tooltip.scss
+494 silly gunzTarPerm extractEntry scss/_transitions.scss
+495 silly gunzTarPerm extractEntry scss/_type.scss
+496 silly gunzTarPerm extractEntry scss/_utilities.scss
+497 silly gunzTarPerm extractEntry scss/_variables.scss
+498 silly gunzTarPerm extractEntry scss/bootstrap-grid.scss
+499 silly gunzTarPerm extractEntry scss/bootstrap-reboot.scss
+500 silly gunzTarPerm extractEntry scss/bootstrap-utilities.scss
+501 silly gunzTarPerm extractEntry scss/bootstrap.scss
+502 silly gunzTarPerm extractEntry scss/forms/_floating-labels.scss
+503 silly gunzTarPerm extractEntry scss/forms/_form-check.scss
+504 silly gunzTarPerm extractEntry scss/forms/_form-control.scss
+505 silly gunzTarPerm extractEntry scss/forms/_form-range.scss
+506 silly gunzTarPerm extractEntry scss/forms/_form-select.scss
+507 silly gunzTarPerm extractEntry scss/forms/_form-text.scss
+508 silly gunzTarPerm extractEntry scss/forms/_input-group.scss
+509 silly gunzTarPerm extractEntry scss/forms/_labels.scss
+510 silly gunzTarPerm extractEntry scss/forms/_validation.scss
+511 silly gunzTarPerm extractEntry scss/helpers/_clearfix.scss
+512 silly gunzTarPerm extractEntry scss/helpers/_colored-links.scss
+513 silly gunzTarPerm extractEntry scss/helpers/_position.scss
+514 silly gunzTarPerm extractEntry scss/helpers/_ratio.scss
+515 silly gunzTarPerm extractEntry scss/helpers/_stretched-link.scss
+516 silly gunzTarPerm extractEntry scss/helpers/_text-truncation.scss
+517 silly gunzTarPerm extractEntry scss/helpers/_visually-hidden.scss
+518 silly gunzTarPerm extractEntry scss/mixins/_grid.scss
+519 silly gunzTarPerm extractEntry scss/mixins/_alert.scss
+520 silly gunzTarPerm extractEntry scss/mixins/_box-shadow.scss
+521 silly gunzTarPerm extractEntry scss/mixins/_breakpoints.scss
+522 silly gunzTarPerm extractEntry scss/mixins/_buttons.scss
+523 silly gunzTarPerm extractEntry scss/mixins/_caret.scss
+524 silly gunzTarPerm extractEntry scss/mixins/_clearfix.scss
+525 silly gunzTarPerm extractEntry scss/mixins/_container.scss
+526 silly gunzTarPerm extractEntry scss/mixins/_deprecate.scss
+527 silly gunzTarPerm extractEntry scss/mixins/_forms.scss
+528 silly gunzTarPerm extractEntry scss/mixins/_gradients.scss
+529 silly gunzTarPerm extractEntry scss/mixins/_border-radius.scss
+530 silly gunzTarPerm extractEntry scss/mixins/_image.scss
+531 silly gunzTarPerm extractEntry scss/mixins/_list-group.scss
+532 silly gunzTarPerm extractEntry scss/mixins/_lists.scss
+533 silly gunzTarPerm extractEntry scss/mixins/_pagination.scss
+534 silly gunzTarPerm extractEntry scss/mixins/_reset-text.scss
+535 silly gunzTarPerm extractEntry scss/mixins/_resize.scss
+536 silly gunzTarPerm extractEntry scss/mixins/_table-variants.scss
+537 silly gunzTarPerm extractEntry scss/mixins/_text-truncate.scss
+538 silly gunzTarPerm extractEntry scss/mixins/_transition.scss
+539 silly gunzTarPerm extractEntry scss/mixins/_utilities.scss
+540 silly gunzTarPerm extractEntry scss/mixins/_visually-hidden.scss
+541 silly gunzTarPerm extractEntry scss/utilities/_api.scss
+542 silly gunzTarPerm extractEntry scss/vendor/_rfs.scss
+543 silly lockFile 6078ca2c-sets-scss-node-modules-bootstrap tar:///opt/lampp/htdocs/ecommerce/assets/scss/node_modules/bootstrap
+544 silly lockFile 6078ca2c-sets-scss-node-modules-bootstrap tar:///opt/lampp/htdocs/ecommerce/assets/scss/node_modules/bootstrap
+545 silly lockFile 34acf77e-otstrap-5-0-0-alpha2-package-tgz tar:///root/.npm/bootstrap/5.0.0-alpha2/package.tgz
+546 silly lockFile 34acf77e-otstrap-5-0-0-alpha2-package-tgz tar:///root/.npm/bootstrap/5.0.0-alpha2/package.tgz
+547 info preinstall bootstrap@5.0.0-alpha2
+548 verbose readDependencies using package.json deps
+549 verbose readDependencies using package.json deps
+550 silly resolved []
+551 verbose about to build /opt/lampp/htdocs/ecommerce/assets/scss/node_modules/bootstrap
+552 info build /opt/lampp/htdocs/ecommerce/assets/scss/node_modules/bootstrap
+553 verbose linkStuff [ false,
+553 verbose linkStuff   false,
+553 verbose linkStuff   false,
+553 verbose linkStuff   '/opt/lampp/htdocs/ecommerce/assets/scss/node_modules' ]
+554 info linkStuff bootstrap@5.0.0-alpha2
+555 verbose linkBins bootstrap@5.0.0-alpha2
+556 verbose linkMans bootstrap@5.0.0-alpha2
+557 verbose rebuildBundles bootstrap@5.0.0-alpha2
+558 info install bootstrap@5.0.0-alpha2
+559 info postinstall bootstrap@5.0.0-alpha2
+560 verbose cache add [ 'popper.js@^1.16.1', null ]
+561 verbose cache add name=undefined spec="popper.js@^1.16.1" args=["popper.js@^1.16.1",null]
+562 verbose parsed url { protocol: null,
+562 verbose parsed url   slashes: null,
+562 verbose parsed url   auth: null,
+562 verbose parsed url   host: null,
+562 verbose parsed url   port: null,
+562 verbose parsed url   hostname: null,
+562 verbose parsed url   hash: null,
+562 verbose parsed url   search: null,
+562 verbose parsed url   query: null,
+562 verbose parsed url   pathname: 'popper.js@^1.16.1',
+562 verbose parsed url   path: 'popper.js@^1.16.1',
+562 verbose parsed url   href: 'popper.js@^1.16.1' }
+563 verbose cache add name="popper.js" spec="^1.16.1" args=["popper.js","^1.16.1"]
+564 verbose parsed url { protocol: null,
+564 verbose parsed url   slashes: null,
+564 verbose parsed url   auth: null,
+564 verbose parsed url   host: null,
+564 verbose parsed url   port: null,
+564 verbose parsed url   hostname: null,
+564 verbose parsed url   hash: null,
+564 verbose parsed url   search: null,
+564 verbose parsed url   query: null,
+564 verbose parsed url   pathname: '^1.16.1',
+564 verbose parsed url   path: '^1.16.1',
+564 verbose parsed url   href: '^1.16.1' }
+565 verbose addNamed [ 'popper.js', '^1.16.1' ]
+566 verbose addNamed [ null, '>=1.16.1-0 <2.0.0-0' ]
+567 silly lockFile 9d616852-popper-js-1-16-1 popper.js@^1.16.1
+568 verbose lock popper.js@^1.16.1 /root/.npm/9d616852-popper-js-1-16-1.lock
+569 silly addNameRange { name: 'popper.js',
+569 silly addNameRange   range: '>=1.16.1-0 <2.0.0-0',
+569 silly addNameRange   hasData: false }
+570 verbose url raw popper.js
+571 verbose url resolving [ 'https://registry.npmjs.org/', './popper.js' ]
+572 verbose url resolved https://registry.npmjs.org/popper.js
+573 info trying registry request attempt 1 at 21:49:36
+574 http GET https://registry.npmjs.org/popper.js
+575 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+576 info trying registry request attempt 2 at 21:49:46
+577 http GET https://registry.npmjs.org/popper.js
+578 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+579 info trying registry request attempt 3 at 21:50:46
+580 http GET https://registry.npmjs.org/popper.js
+581 silly lockFile 9d616852-popper-js-1-16-1 popper.js@^1.16.1
+582 silly lockFile 9d616852-popper-js-1-16-1 popper.js@^1.16.1
+583 info /opt/lampp/htdocs/ecommerce/assets/scss/node_modules/bootstrap unbuild
+584 info preuninstall bootstrap@5.0.0-alpha2
+585 info uninstall bootstrap@5.0.0-alpha2
+586 verbose true,/opt/lampp/htdocs/ecommerce/assets/scss/node_modules,/opt/lampp/htdocs/ecommerce/assets/scss/node_modules unbuild bootstrap@5.0.0-alpha2
+587 info postuninstall bootstrap@5.0.0-alpha2
+588 error Error: CERT_UNTRUSTED
+588 error     at SecurePair.<anonymous> (tls.js:1370:32)
+588 error     at SecurePair.EventEmitter.emit (events.js:92:17)
+588 error     at SecurePair.maybeInitFinished (tls.js:982:10)
+588 error     at CleartextStream.read [as _read] (tls.js:469:13)
+588 error     at CleartextStream.Readable.read (_stream_readable.js:320:10)
+588 error     at EncryptedStream.write [as _write] (tls.js:366:25)
+588 error     at doWrite (_stream_writable.js:223:10)
+588 error     at writeOrBuffer (_stream_writable.js:213:5)
+588 error     at EncryptedStream.Writable.write (_stream_writable.js:180:11)
+588 error     at write (_stream_readable.js:583:24)
+589 error If you need help, you may report this log at:
+589 error     <http://github.com/isaacs/npm/issues>
+589 error or email it to:
+589 error     <npm-@googlegroups.com>
+590 error System Linux 3.13.0-24-generic
+591 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "bootstrap"
+592 error cwd /opt/lampp/htdocs/ecommerce/assets/scss
+593 error node -v v0.10.25
+594 error npm -v 1.3.10
+595 verbose exit [ 1, true ]

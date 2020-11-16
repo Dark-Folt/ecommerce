@@ -1,9 +1,15 @@
+<?php
+session_start();
+if(isset($_SESSION['connect'])){
+    header('Location: /sessions/client/espaceClient.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <title>Connexion</title>
         <!-- include contient le head general avec touts les links-->
-        <link rel="stylesheet" type="text/css" href="../assets/css/accueil.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
         <?php include('../include/head.php');?>
     </head>
     <body>
