@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION['connect'])){
-    header('Location: ../sessions/client/espaceClient.php');
+    header('Location: /sessions/client/espaceClient.php');
 }
 ?>
 <!DOCTYPE html>

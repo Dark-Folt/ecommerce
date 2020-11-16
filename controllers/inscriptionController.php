@@ -1,4 +1,8 @@
 <?php
+    require '../vendor/autoload.php';
+    use App\Inc\MailSender;
+    use App\DataBase\MyDB;
+
     /*si on a appuyé sur le bouton valider on entre dans le if*/
     if(isset($_POST['submit-btn']))
     {
@@ -25,7 +29,7 @@
             base donné car un mail doit etre utilisé qu'une seule fois
         */
         //require_once('../include/connexionDB.php');
-        require_once ('../include/MyDB.php');
+        //require_once ('../include/MyDB.php');
         $DB = new MyDB();
 
         if(empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
@@ -71,7 +75,7 @@
                 la classe MailSender
             */
 
-            require_once ('../include/MailSender.php');
+            // require_once ('../include/MailSender.php');
             
 
             $mailer         = new MailSender();

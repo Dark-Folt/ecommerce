@@ -1,5 +1,6 @@
 <?php
-
+    require '../vendor/autoload.php';
+    use App\DataBase\MyDB;
     /*
         Si on arrive sur cette page c'est que le mail de confirmation a été envoyé
         Dans cette partie nous allons faire une requete vers la BD pour vérifier l'existence 
@@ -14,7 +15,7 @@
         {
             $client_email = $_GET['email'];
             $client_token = $_GET['confirm_token'];
-            require_once('../include/MyDB.php');
+            
             $DB = new MyDB();
 
             $data = array(

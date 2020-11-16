@@ -1,5 +1,7 @@
 <?php
 session_start();
+require '../vendor/autoload.php';
+use App\DataBase\MyDB;
 
 /**
  * connexionController.php 
@@ -37,7 +39,7 @@ if(isset($_POST['submit-btn']))
         //si le tableau n'est pas vide on redirige
         $email = $_POST['email'];
 
-        require_once ('../include/MyDB.php');
+        // require_once ('../include/MyDB.php');
         $DB = new MyDB();
         $client = $DB->query('SELECT email, password, email_confirme FROM client WHERE email =:email',array('email' => $email))->fetch();
         $DB->closeDB();

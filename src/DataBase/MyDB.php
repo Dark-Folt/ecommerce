@@ -1,4 +1,7 @@
 <?php
+
+
+namespace App\DataBase;
 /*
  *
  * class MyDB 
@@ -34,7 +37,7 @@ class MyDB{
     private $DBName = 'ecommerce';
 
     /**
-     * @var PDO reference vers la base de donnée
+     * @var \PDO reference vers la base de donnée
      */
     private $pdo;
 
@@ -52,7 +55,7 @@ class MyDB{
      * @param int    numéro de port que l'on va utiliser pour se connecter à la BD
      * @param string mot de passe de l'hote
      * @param string nom de la BD
-     * @throws PDOException
+     * @throws \PDOException
      */
     public function __construct($host = null, $port = null, $userName = null, $password = null, $DBName = null) {
         /**
@@ -70,10 +73,10 @@ class MyDB{
         // on fait un try car la connexion à la BD peut être suivie d'une erreur
         try{
             //une fois qu'on a remplie les propriétés on va instancier la BD
-            $this->pdo = new PDO('mysql:host='.$this->host.';port='.$this->port.';dbname='.$this->DBName.'', $this->userName, $this->password);
+            $this->pdo = new \PDO('mysql:host='.$this->host.';port='.$this->port.';dbname='.$this->DBName.'', $this->userName, $this->password);
 
             //on set les attributs pour l'affichage des erreurs
-            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 
             /*
                 L'orque l'on recupere des informations dans une table 
@@ -82,8 +85,8 @@ class MyDB{
                 on va demander au logiciel de nous renvoyer les informations comme des objets 
                 donc au lieu d'utilier $donnees['nom'] => $donnees->nom;
             */
-            $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-        }catch(PDOException $e){
+            $this->pdo->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_OBJ);
+        }catch(\PDOException $e){
             die('Impossible de se connecter à la Base de donnée: '.$e->getMessage());
         }
     }

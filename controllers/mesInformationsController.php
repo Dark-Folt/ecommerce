@@ -1,8 +1,11 @@
 <?php
+    require '../vendor/autoload.php';
+    use App\DataBase\MyDB;
+
     /*si on a appuyé sur le bouton valider on entre dans le if*/
     if(isset($_POST['submit-btn']))
     {
-        require_once ('../include/MyDB.php');
+        // require_once ('../include/MyDB.php');
         $DB     = new MyDB();
         $email  = $_POST['email'];
 

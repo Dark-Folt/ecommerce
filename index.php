@@ -1,7 +1,7 @@
 <?php
-    // require_once('controllers/articleController.php');
-    include('controllers/articleController.php');
-    //TODO::PROBLEME DE LIEN VERS LES IMAGES
+require 'vendor/autoload.php';
+include('controllers/articleController.php');
+    
 ?>
 <!DOCTYPE  html>
 <html>
