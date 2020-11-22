@@ -1,7 +1,20 @@
 <?php
-require 'vendor/autoload.php';
-include('controllers/articleController.php');
-    
+//affichage des articles qui sont dans la BD
+
+require('vendor/autoload.php');
+use  App\DataBase\MyDB;
+use  App\Models\Article;
+
+$DB = new MyDB();
+$articlesBDD = $DB->query('SELECT * FROM article')->fetchAll(\PDO::FETCH_ASSOC);
+$articles = array();
+foreach($articlesBDD as $article)
+{
+    array_push($articles, new Article($article));
+}
+
+$DB->closeDB();
+
 ?>
 <!DOCTYPE  html>
 <html>
@@ -22,7 +35,7 @@ include('controllers/articleController.php');
                 <div class="article-body">
                     <h5 class="article-titre"><?=$article->getNom()?></h5>
                     <p class="article-description"><?=$article->getDescription()?></p>
-                    <a href="/school/ecommerce/controllers/articleController.php" class="btn btn-primary">Afficher plus de détails...</a>
+                    <a href="controllers/articleController.php" class="btn btn-primary">Afficher plus de détails...</a>
                 </div>
             </div>
         <?php endforeach ?>
