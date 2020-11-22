@@ -2,8 +2,9 @@
     <head>
         <title>Administration</title>
         <link rel="stylesheet" type="text/css" href="/assets/css/index.css">
+        <?php include("../include/head.php");?>
     </head>
-    <form  method="post" action="controllers/articleController.php" class="user-form" enctype="multipart/form-data">
+    <form  method="post" action="controllers/articleController.php?ajout=true" class="user-form" enctype="multipart/form-data">
         <div id="container">
                     <div class="form-header">
                         <a href="/admin" id="a-retour">
@@ -24,24 +25,24 @@
                       <label for="categorie">Catégorie:</label>
                         <select name="categorie">
                             <option value="telephonie">Télephonie</option>
-                            <option value="document">Document</option>
+                            <option value="documents">Document</option>
                             <option value="jeux-video">Jeux-Vidéos</option>
                        </select>
                     </div>
                     <div class="input-container">
-                        <input type="number" placehold="prix de l'article" name="prix" class="form-control" require>
+                        <input type="number" placehold="prix de l'article" name="prix" min="0" max="4000" class="form-control" placeholder="Prix" require>
                     </div>
                     <div class="input-container">
-                        <span>Description du produit: </span>
-                        <textarea name="description" id="" cols="30" rows="10"></textarea>
+                        <textarea name="description" id="" cols="30" rows="10" placeholder="Description de l'article"></textarea>
                     </div>
                     <div class="input-container">
-                        <input type="file" name="nom-img"  class="form-control" require>
+                        <label for="nom-img"></label>
+                        <input type="file" name="nom-img"  class="" value="Choisir une image" accept="image/png, image/jpeg" require>
                     </div>
                     </div>
                     <div class="bt-container">
                         <!-- <button type="submit" class="btn btn-outline-success btn-lg bt-user-form" name="valider">Créer mon compte</button> -->
-                        <input type="submit" name="submit-btn" class="submit-input" id="register-input" value="Ajouter l'article">
+                        <input type="submit" name="submit-btn" class="" id="" value="Ajouter l'article">
                     </div>
                 </div>
     </form>
