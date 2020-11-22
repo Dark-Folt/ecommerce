@@ -24,6 +24,9 @@
         if($somme % 10 == 0)
         {
             echo "le code est bon !";
+            echo "Un email vous a été envoyé dans votre boite email";
+
+            //TODO:envoie du mail recapitulant les details de la commande
         }
         else
         {
