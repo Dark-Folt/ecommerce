@@ -1,0 +1,59 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:sans-serif;
+
+}
+.card-details p{
+	font-size:14px;
+}
+.card-details label{
+	font-size:10px;
+	line-height:20px;
+}
+.card-num-field-group{
+	margin-top:10px;
+}
+.date-field-group{
+	margin-top:10px;
+	display:inline-block;
+}
+.cvc-field-group{
+	margin-top:10px;
+	display:inline-block;
+	float:right;
+}
+.name-field-group{
+	margin-top:10px;
+}
+.card-num-field,.name-field{
+	width:270px;
+}
+.date-field,.cvc-field{
+	width:80px;
+}
+.card-details input{
+	border:1px solid #ccc;
+	height:22px;
+	padding:5px;
+	font-size:10px;
+
+}
+.card-details input::placeholder{
+
+	color:#ccc;
+	margin-top:20px;
+
+}
+.pay-btn{
+	width:270px;
+	color:#ccc;
+	margin-top:20px;
+	height:30px;
+	background-color:#2d972db4;
+	border:none;
+	cursor:pointer;
+
+}
