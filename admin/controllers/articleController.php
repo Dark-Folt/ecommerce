@@ -1,7 +1,7 @@
 <?php
 //on inclue le fichier qui permet d'utiliser la classe MyDB
-require_once('../../include/MyDB.php');
-$DB = new MyDB();
+require '../../vendor/autoload.php';
+use App\DataBase\MyDB;
 
 /**
  * --------------------------------Processus pour l'ajout des articles
@@ -19,7 +19,6 @@ $DB = new MyDB();
     $prix           = htmlspecialchars($_POST['prix']);
     $description    = htmlspecialchars($_POST['description']);
 
-
     
     /**
      * Dans ce scope on vérifie si le select catégorie est passé
@@ -33,7 +32,7 @@ $DB = new MyDB();
      * 
      */
     if(isset($_POST['categorie'])) {
-        $target = "../../articles/img/";
+        $target = "../../articles/img/";  /// il était la le probleme
 
         // Testons si le fichier a bien été envoyé et s'il n'y a pas d'erreur
         
@@ -53,6 +52,8 @@ $DB = new MyDB();
                     break;
             }
 
+            $DB = new MyDB();
+
             //basename nous renvoie juste le nom du fichier et non son chemin
             $target .= '/'.basename($_FILES['nom-img']['name']) ;
 
@@ -67,19 +68,19 @@ $DB = new MyDB();
                     'nom'           => $nomArticle,
                     'marque'        => $marque,
                     'prix'          => $prix,
-                    'image'         => '/ecommerce/articles/img/'.$categValue.'/'.$_FILES['nom-img']['name'],
+                    'image'         => '/articles/img/'.$categValue.'/'.$_FILES['nom-img']['name'],
                     'description'   => $description,
                     'categorie'     => $categValue
                 );
                 $DB->query('INSERT INTO article(nom, marque, prix, image, description, categorie) VALUES(:nom, :marque, :prix, :image, :description, :categorie)', $data);
             }
 
+            $DB->closeDB();
         }
     }
     
  }
 
-$DB->closeDB();
 //TODO:animations pour revenir 
 header("Location: ../");
 ?>
