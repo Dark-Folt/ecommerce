@@ -20,6 +20,7 @@ if(isset($_GET['articleId']))
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+       <?php include("../include/head.php");?>
     </head>
 <form class="user-form">
     <div id="container">

@@ -32,6 +32,7 @@ if(!isset($_SESSION['connect'])){
     <head>
        <title>Mon panier</title>
        <link rel="stylesheet" type="text/css" href="../../assets/css/index.css">
+       <?php include("../../include/head.php");?>
     </head>
     <body>
     	<form class="user-form"><!-- fleme de mettre un div puis ensuite refaire le style on laisse le form -->

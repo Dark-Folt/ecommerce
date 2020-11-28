@@ -1,5 +1,4 @@
 <?php
-//affichage des articles qui sont dans la BD
 
 require('vendor/autoload.php');
 use  App\DataBase\MyDB;
