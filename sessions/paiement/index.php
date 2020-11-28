@@ -6,6 +6,12 @@
        <link rel="stylesheet" type="text/css" href="style.css">
         <?php include('../../include/head.php');?>
     </head>
+    <style>
+        input {
+            outline: none;
+            /* height: 30px; */
+        }
+    </style>
     <body>
     	<form method="post" action="paimentController.php" class="user-form">
             <div id="container">
@@ -22,15 +28,15 @@
             <div>
                 <p>Paiement par carte bancaire</p>
                 <div class="card-num-field-group">
-                    <label for="code16c">Card Number</label>
+                    <label for="code16c">N° de la carte</label>
                     <input type="text" class="card-num-field" name="code16c" placeholder="xxxx-xxxx-xxxx-xxxx">
                 </div>
 
 
                 <div class="card-num-field-group">
-                    <label>Expery Date</label>
+                    <label>Date d'expriration</label>
                     <input type="text" class="date-field" placeholder="mm">
-                    <input type="text" class="date-field" placeholder="yyyy">
+                    <input type="text" class="date-field" placeholder="aaaa">
                 </div>
 
                 <div class="cvc-field-group">
@@ -39,8 +45,8 @@
                 </div>
 
                 <div class="name-field-group">
-                    <label>Card Holder Name</label>
-                    <input type="password" class="name-field" placeholder="Full Name">
+                    <label>Nom sur la carte</label>
+                    <input type="password" class="name-field" placeholder="Nom du proprietaire de la carte">
                 </div>
                 <!-- <button type="button" class="pay-btn">Pay Now</button> -->
                 <input type="submit" class="pay-btn" value="Payer maintenant"/>

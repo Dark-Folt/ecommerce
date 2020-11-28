@@ -63,7 +63,8 @@ use App\DataBase\MyDB;
              * etre d'abord copier dans un fichier puis ensuite 
              * mise dans un autre dossier
             */
-            $target .= '/tmp/'.basename($_FILES['nom-img']['name']) ;
+            // $target .= '/tmp/'.basename($_FILES['nom-img']['name']) ;
+            $target .= '/'.basename($_FILES['nom-img']['name']) ;
 
             /**
              * Dans ce scope on upload le fichier 
