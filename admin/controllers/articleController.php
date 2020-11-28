@@ -55,7 +55,15 @@ use App\DataBase\MyDB;
             $DB = new MyDB();
 
             //basename nous renvoie juste le nom du fichier et non son chemin
-            $target .= '/'.basename($_FILES['nom-img']['name']) ;
+            /** target contient le chemin vers le dossier tmp
+             * tmp c'est le dossier temporaire qui va contenir 
+             * les images que upload l'admin 
+             * parce que pour ajouter une image 
+             * lorqu'elle est selectionner dans le menu, elle doit 
+             * etre d'abord copier dans un fichier puis ensuite 
+             * mise dans un autre dossier
+            */
+            $target .= '/tmp/'.basename($_FILES['nom-img']['name']) ;
 
             /**
              * Dans ce scope on upload le fichier 

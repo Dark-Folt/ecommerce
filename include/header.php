@@ -18,7 +18,7 @@
                         <li><a href="sessions/categories/jeuxVideos.php">Jeux vidéos</a></li>
                         <li><a href="sessions/categories/telephonie.php">Téléphonie</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#"></a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">One more separated link</a></li>
                     </ul>

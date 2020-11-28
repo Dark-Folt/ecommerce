@@ -37,7 +37,7 @@ if(isset($_GET['articleId']))
                 <img src="<?= $article->getImage()?>" alt="" style="max-width: 400px; max-height: 400px; border-radius: 5px">
                 <p>Marque: <?= $article->getMarque()?></p>
                 <p>Description: <?= $article->getDescription()?></p>
-                <p style="">Prix: <?=$article->getPrix()?></p>
+                <p style="">Prix: <?=$article->getPrix()?> €</p>
             </div>
             <a href="../sessions/panier" id="" class="" style="height: 50px; text-decoration: none; border-radius: 8px; padding: 10px; background-color: #1eba71; color: #fff;">
                 <!-- ICON DU PANIER -->

@@ -1,6 +1,16 @@
 <?php
-require_once('../controllers/clientController.php');
-var_dump($clients);
+require '../vendor/autoload.php';
+use App\DataBase\MyDB;
+use  App\Models\Client;
+
+$DB = new MyDB();
+$clientBDD = $DB->query('SELECT * FROM client')->fetchAll(\PDO::FETCH_ASSOC);
+$clients = array();
+foreach($clientBDD as $client)
+{
+    array_push($clients, new Client($client));
+}
+$DB->closeDB();
 ?>
 <html>
     <head>

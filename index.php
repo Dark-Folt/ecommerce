@@ -34,7 +34,7 @@ $DB->closeDB();
                 </div>
                 <div class="article-body">
                     <h5 class="article-titre"><?=$article->getNom()?></h5>
-                    <p class="article-description"><?=$article->getDescription()?></p>
+                    <p class="article-description"><?=substr($article->getDescription(),0,25)?></p>
                     <a href="controllers/articleController.php?articleId=<?=$article->getId()?>" class="btn btn-primary">Afficher plus de détails...</a>
                 </div>
             </div>
