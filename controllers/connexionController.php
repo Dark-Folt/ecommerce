@@ -67,7 +67,10 @@ if(isset($_POST['submit-btn']))
                 */
                 header('Location: ../include/errors/pageDErreur.php?verif_email=false');
             }else {
+
+                // connexion reussite
                 $_SESSION['connect'] = 1;
+                $_SESSION['userID'] = $client->id;
                 $_SESSION['email'] = $client->email;
                 //TODO:javascript animation a faire 
                 header('Location: ../');

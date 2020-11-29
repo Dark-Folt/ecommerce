@@ -95,7 +95,7 @@ class MyDB{
     /**
      * query permet de faire une requete preparée
      * si les données pour la preparation ne sont passé en parametre alors on execute 
-     * la requte sans avec juste la faction query de pdo
+     * la requete sans avec juste la faction query de pdo
      * on garde ensuite la reference de la requetete pour pouvoir fermer la BD
      * @param string la requete à exécuter
      * @param boolean tableau assossiatif qui contient les données de la requete preparée
