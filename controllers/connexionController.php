@@ -41,7 +41,7 @@ if(isset($_POST['submit-btn']))
 
         // require_once ('../include/MyDB.php');
         $DB = new MyDB();
-        $client = $DB->query('SELECT email, password, email_confirme FROM client WHERE email =:email',array('email' => $email))->fetch();
+        $client = $DB->query('SELECT id, email, password, email_confirme FROM client WHERE email =:email',array('email' => $email))->fetch();
         $DB->closeDB();
 
         //TODO: Vérification en JavaScript

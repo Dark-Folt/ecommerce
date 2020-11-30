@@ -1,5 +1,7 @@
 <?php
 
+    require '../../vendor/autoload.php';
+
     if(isset($_POST['code16c'])){
         $carteCode = $_POST['code16c'];
         $tab = str_split($carteCode);
@@ -24,13 +26,14 @@
         if($somme % 10 == 0)
         {
             echo "le code est bon !";
-            echo "Un email vous a été envoyé dans votre boite email";
-
+            echo "Un email vous a été envoyé";
             //TODO:envoie du mail recapitulant les details de la commande
+
+            header("Location: ../panier?paiment=true");
         }
         else
         {
-            echo "non";
+            header("Location: javascript:hisroty.back()");
         }
     }
 ?>

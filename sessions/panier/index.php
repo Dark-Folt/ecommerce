@@ -17,6 +17,7 @@ require '../../vendor/autoload.php';
 use  App\DataBase\MyDB;
 use  App\Models\Article;
 use  App\Models\Panier;
+use  App\Inc\MailSender;
 
 $panier = new Panier();
 
@@ -56,7 +57,7 @@ if(isset($_GET['articleID'])) {
  * contenant les informations d'un produit
  * On creer un objet de type Article que l'on va ajouter dans le tableau $articles
  * On parcours le tableau $articles en affichant les produit en HTML
- */
+*/
 $DB = new MyDB();
 
 $articles = array(); //tableau qui va contenir tout les articles qui sont dans le panier
@@ -66,34 +67,66 @@ $articles = array(); //tableau qui va contenir tout les articles qui sont dans l
  * pour chaque ^$IDkey on fait une requete vers la BD pour recuperer
  * les informations sur l'objet 
  * ensuite on ajoute l'objet dans le tebleau article
- */
+*/
 
 
- if(isset($_SESSION['panier']))
- {
+if(isset($_SESSION['panier']))
+{
 
-    
-    $IDKeys = array_keys($_SESSION['panier']);
+$IDKeys = array_keys($_SESSION['panier']);
 
-    foreach($IDKeys as $IDKey)
-    {
-        $resBDD = $DB->query('SELECT * FROM article WHERE id = ?',array($IDKey))->fetch(\PDO::FETCH_ASSOC);
-        array_push($articles, new Article($resBDD));
-    }
-    
-    
-    $total = 0;
+foreach($IDKeys as $IDKey)
+{
+    $resBDD = $DB->query('SELECT * FROM article WHERE id = ?',array($IDKey))->fetch(\PDO::FETCH_ASSOC);
+    array_push($articles, new Article($resBDD));
+}
+
+
+//calcultu prix total des produits qui sont dans le panier
+$total = 0;
+foreach($articles as $article)
+{
+    $total += $article->getPrix();
+}
+
+
+}
+
+
+/**
+ * Traitement et envoie du mail de confirmation de la commande
+* On verifie si la variable paiment est passée dans l'url
+* Lorqu'on valide un paiment nous sommes rediriger vers le 
+* panier
+* On recupere le mail de l'utilisateur grace a la variable de session userID
+*/
+
+if(isset($_GET['paiment']) && $_GET['paiment'] == true)
+{
+    $mailer = new MailSender();
+    $userID = $_SESSION['userID'];
+    $email  = $DB->query("SELECT email FROM client WHERE id = ?",array($userID))->fetch(\PDO::FETCH_ASSOC)['email'];
+    $message = "";
     foreach($articles as $article)
     {
-        $total += $article->getPrix();
+        $message .= '<p>'.$article->getNom().' au prix de '.$article->getPrix().' € </p>';
     }
+    $message .= '<p>'.'Prix total de la commande: '.$total.' € </p>';
 
-    //je teste si la vartiable est vide ou pas pourvoir fermer la BD
-    //sinon si je ne teste pas il y'a une erreur
-    if(!empty($_SESSION['panier']))
-        $DB->closeDB();
- }
+    $mailer->envoyerMessage($email, $message);
 
+    /** 
+     * Une fois que le mail a ete envoyer je vide le panier
+     * 
+    */
+    //TODO:: vider le panier
+}
+
+
+//je teste si la vartiable est vide ou pas pourvoir fermer la BD
+//sinon si je ne teste pas il y'a une erreur
+if(!empty($_SESSION['panier']))
+    $DB->closeDB();
 
 
 ?>

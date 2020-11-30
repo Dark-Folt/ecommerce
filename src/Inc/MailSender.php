@@ -20,7 +20,7 @@ class MailSender
 		$this->mailer->Password = "Meco12-76";                           
 	    $this->mailer->SMTPSecure = 'ssl';         
 	    $this->mailer->Port       = 465;
-	    $this->mailer->setFrom('marigo9794@gmail.com', 'Aben-Shop');
+	    $this->mailer->setFrom('ecommerce2020.shop@gmail.com', 'Aben-Shop');
 	    $this->mailer->isHTML(true);
 
 	    // require_once('corpsMails.php');
@@ -53,6 +53,15 @@ class MailSender
 		$this->mailer->addAddress($email);                                  
 	    $this->mailer->Subject = 'Confirmation de mail';
 	    $this->mailer->Body    = $this->ecrireConfirmMessage($email, $confirm_token);
+
+	    $this->mailer->send();
+	}
+
+	//TODO:: envoyer message de confirmation de la commande
+	public function envoyerMessage($email, $message) {
+		$this->mailer->addAddress($email);                                  
+	    $this->mailer->Subject = 'Recapitulatif de commande';
+	    $this->mailer->Body    = $message;
 
 	    $this->mailer->send();
 	}
