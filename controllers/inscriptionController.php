@@ -91,6 +91,7 @@
             $DB->query('INSERT INTO client(email, password, confirm_token) VALUES(:email, :password, :confirm_token)', $data);
             $DB->closeDB();
             $mailer->envoyerMailConfirmation($_POST['email'], $confirm_token);
+            header('Location: ../');
             
         }else{
              header('Location:../inscription/');

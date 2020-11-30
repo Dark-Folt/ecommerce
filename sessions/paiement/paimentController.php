@@ -33,7 +33,7 @@
         }
         else
         {
-            header("Location: javascript:hisroty.back()");
+            header("Location: ../../../");
         }
     }
 ?>
